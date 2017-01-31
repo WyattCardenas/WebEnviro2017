@@ -1,0 +1,79 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+
+/*HEADING SECTION*/
+
+#heading {
+    margin: 0 auto;
+    min-height: 100%;
+    background-image: url("../photos/sample1.jpg");
+    /*parallax*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#heading-text {
+    text-align: center;
+    font-family: arial;
+    color: #dedede;
+    padding-top: 15%;
+    font-size: 30px;
+}
+
+.scroll-icon {
+    text-align: center;
+    font-family: arial;
+    color: #dedede;
+    padding-top: 25%;
+    font-size: 30px;
+}
+
+h1,
+p {
+    margin: 0;
+    color: #dedede;
+}
+
+
+/*STRIP SECTION*/
+
+#strip {
+    margin: 0 auto;
+    min-height: 100%;
+    background-color: #2d2d2d;
+    min-height: 50%;
+}
+
+#strip-content {
+    position: absolute;
+}
+
+
+/*LIFE BEFORE ON BAGUIO SECTION*/
+
+#life-before {
+    margin: 0 auto;
+    min-height: 100%;
+    background-image: url("../photos/sample2.jpg");
+    /*parallax*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#life-before-content {
+    position: absolute;
+    text-align: center;
+    font-family: arial;
+    color: #dedede;
+    padding-top: 15%;
+    font-size: 30px;
+}
