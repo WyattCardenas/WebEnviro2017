@@ -2,80 +2,32 @@ html,
 body {
     margin: 0;
     height: 100%;
+
 }
 
 
-/*HEADING SECTION*/
+/* League Gothic Regular*/
 
-#heading {
-    margin: 0 auto;
-    min-height: 100%;
-    background-image: url("../photos/sample1.jpg");
-    /*parallax*/
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#heading-text {
-    text-align: center;
-    font-family: arial;
-    color: #dedede;
-    padding-top: 15%;
-    font-size: 30px;
-}
-
-.scroll-icon {
-    text-align: center;
-    font-family: arial;
-    color: #dedede;
-    padding-top: 25%;
-    font-size: 30px;
-}
-
-h1,
-p {
-    margin: 0;
-    color: #dedede;
+@font-face {
+    font-family: 'League Gothic Regular';
+    src: url('../fonts/LeagueGothic-Regular.otf');
+    font-weight: 900;
 }
 
 
-/*STRIP SECTION*/
+/* Oswald Light*/
 
-#strip{
-    margin: 0 auto;
-    min-height: 100%;
-    background-color: #2d2d2d;
-    min-height: 50%;
+@font-face {
+    font-family: 'Oswald-Light';
+    src: url('../fonts/Oswald-Light.ttf');
+    font-weight: 900;
 }
 
-#strip-content {
-    position: absolute;
-}
 
-/*LIFE BEFORE ON BAGUIO SECTION*/
-#life-before {
-    margin: 0 auto;
-    min-height: 100%;
-    background-image: url("../photos/sample2.jpg");
-    /*parallax*/
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#life-before-content {
-	position: absolute;
-    text-align: center;
-    font-family: arial;
-    color: #dedede;
-    padding-top: 15%;
-    font-size: 30px;
-}
+/*NAVIGATION BAR*/
 
 #navigationbar {
+    position: absolute;
     text-align: right;
     width: 100%;
     background-color: transparent;
@@ -93,11 +45,172 @@ p {
 }
 
 #navigationbar ul li a {
-    font-family: arial;
+    font-family: 'Oswald-Light';
     font-size: 15px;
     color: #dedede;
     text-decoration: none;
     text-transform: uppercase;
     padding: 14px 16px;
-    text-shadow: 1px 1px 1px grey, 3px 3px 5px black;
+    text-shadow: 1px 1px 1px grey, 1px 1px 1px black;
+}
+
+#navigationbar ul li a:hover {
+    opacity: 0.5;
+}
+
+
+/*HEADING SECTION*/
+
+#heading {
+    margin: 0 auto;
+    min-height: 100%;
+    background-image: url("bg1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+#heading-intro p {
+    text-align: center;
+    font-family: "League Gothic Regular";
+    font-size: 100px;
+    padding-top: 15%;
+    min-width: 100%;
+    transition: 1s ease;
+    transition-delay: 0.5s;
+}
+
+#heading:hover #heading-intro>p {
+    opacity: 0;
+}
+
+#heading:hover .left-header {
+    opacity: 1;
+}
+
+.left-header {
+    opacity: 0;
+    width: 50%;
+    min-height: 100%;
+    float: left;
+    transition: 1s ease;
+    transition-delay: 0.5s;
+}
+
+.left-header p {
+    position: absolute;
+    font-family: "Oswald-Light";
+    left: 20%;
+    top: 20%;
+    font-size: 20px;
+    text-align: center;
+}
+
+#left-tree {
+    position: absolute;
+    bottom: 0px;
+}
+#left-tree>img {
+    width: 550px;
+    opacity: 0.3;
+}
+
+.right-header {
+    float: right;
+    width: 80%;
+    transition: 1s ease;
+    transition-delay: 0.5s;
+    opacity: 0;
+}
+
+#right-tree {
+    position: absolute;
+    right: 30px;
+    bottom:0px;
+}
+
+#right-tree>img {
+    width: 550px;
+    opacity: 0.3;
+}
+.right-header p {
+    font-family: 'Oswald-Light';
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.right-header:hover{
+    opacity: 1;
+}
+
+h1,
+p {
+    margin: 0;
+    color: #dedede;
+}
+
+
+/*STRIP SECTION*/
+
+#strip {
+    margin: 0 auto;
+    min-height: 25%;
+    background-color: #4E342E;
+}
+
+#strip-content {
+    display: block;
+    font-family: "League Gothic Regular";
+    font-size: 30px;
+    color: #dedede;
+    text-align: center;
+}
+
+
+/*LIFE BEFORE SECTION*/
+
+#life-before {
+    margin: 0 auto;
+    min-height: 100%;
+    background-image: url("sample2.jpg");
+    /*parallax*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#life-before-content {
+    position: absolute;
+    text-align: center;
+    font-family: 'Oswald-Light';
+    color: #dedede;
+    padding-top: 15%;
+    font-size: 30px;
+}
+
+
+/*STATS SECTION*/
+
+#stats {
+    margin: 0 auto;
+    min-height: 45%;
+    background-image: url("b3.jpg");
+    /*parallax*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#stats-content {
+    position: absolute;
+    text-align: center;
+    font-family: arial;
+    color: #dedede;
+    padding-top: 15%;
+    font-size: 30px;
 }
