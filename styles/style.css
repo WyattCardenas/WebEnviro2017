@@ -247,6 +247,27 @@ h1, p {
     font-size: 30px;
 }
 
+/* Stats Section */
+.chart-size {
+    width: 70%;
+}
+
+.stats-charts {
+    text-align: center;
+    background-color: #795548;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.stats-charts h2 {
+    font-family: 'Open Sans';
+    font-size: 35px;
+}
+.stats-charts div h2 {
+    font-family: 'Open Sans';
+    font-size: 25px;
+}
+
 #guide-title {
     padding-top: 10px;
     padding-bottom: 10px;
