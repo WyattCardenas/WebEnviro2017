@@ -1,8 +1,6 @@
-html,
-body {
-    margin: 0;
+html, body {
     height: 100%;
-
+    margin: 0;
 }
 
 
@@ -10,8 +8,8 @@ body {
 
 @font-face {
     font-family: 'League Gothic Regular';
-    src: url('../fonts/LeagueGothic-Regular.otf');
     font-weight: 900;
+    src: url('LeagueGothic-Regular.otf');
 }
 
 
@@ -19,8 +17,24 @@ body {
 
 @font-face {
     font-family: 'Oswald-Light';
-    src: url('../fonts/Oswald-Light.ttf');
     font-weight: 900;
+    src: url('Oswald-Light.ttf');
+}
+
+
+/* Open Sans*/
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('OpenSans-CondLight.ttf');
+}
+
+
+/* Rubik Regular*/
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('Rubik-regular.ttf');
 }
 
 
@@ -28,16 +42,16 @@ body {
 
 #navigationbar {
     position: absolute;
-    text-align: right;
-    width: 100%;
-    background-color: transparent;
     position: fixed;
+    width: 100%;
     margin-top: 10px;
+    text-align: right;
+    background-color: transparent;
 }
 
 #navigationbar ul {
-    list-style: none;
     padding-right: 100px;
+    list-style: none;
 }
 
 #navigationbar ul li {
@@ -45,13 +59,13 @@ body {
 }
 
 #navigationbar ul li a {
-    font-family: 'Oswald-Light';
-    font-size: 15px;
-    color: #dedede;
+    padding: 14px 16px;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 14px 16px;
+    color: #dedede;
     text-shadow: 1px 1px 1px grey, 1px 1px 1px black;
+    font-family: 'Oswald-Light';
+    font-size: 15px;
 }
 
 #navigationbar ul li a:hover {
@@ -62,24 +76,24 @@ body {
 /*HEADING SECTION*/
 
 #heading {
-    margin: 0 auto;
+    z-index: -1;
     min-height: 100%;
+    margin: 0 auto;
     background-image: url("bg1.jpg");
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    z-index: -1;
 }
 
 #heading-intro p {
+    min-width: 100%;
+    padding-top: 15%;
+    transition: 1s ease;
+    transition-delay: 0.5s;
     text-align: center;
     font-family: "League Gothic Regular";
     font-size: 100px;
-    padding-top: 15%;
-    min-width: 100%;
-    transition: 1s ease;
-    transition-delay: 0.5s;
 }
 
 #heading:hover #heading-intro>p {
@@ -91,27 +105,28 @@ body {
 }
 
 .left-header {
-    opacity: 0;
+    float: left;
     width: 50%;
     min-height: 100%;
-    float: left;
     transition: 1s ease;
     transition-delay: 0.5s;
+    opacity: 0;
 }
 
 .left-header p {
     position: absolute;
-    font-family: "Oswald-Light";
-    left: 20%;
     top: 20%;
-    font-size: 20px;
+    left: 20%;
     text-align: center;
+    font-family: "Oswald-Light";
+    font-size: 20px;
 }
 
 #left-tree {
     position: absolute;
     bottom: 0px;
 }
+
 #left-tree>img {
     width: 550px;
     opacity: 0.3;
@@ -128,26 +143,25 @@ body {
 #right-tree {
     position: absolute;
     right: 30px;
-    bottom:0px;
+    bottom: 0px;
 }
 
 #right-tree>img {
     width: 550px;
     opacity: 0.3;
 }
+
 .right-header p {
+    text-align: center;
     font-family: 'Oswald-Light';
     font-size: 20px;
-    text-align: center;
 }
 
-
-.right-header:hover{
+.right-header:hover {
     opacity: 1;
 }
 
-h1,
-p {
+h1, p {
     margin: 0;
     color: #dedede;
 }
@@ -156,61 +170,245 @@ p {
 /*STRIP SECTION*/
 
 #strip {
-    margin: 0 auto;
     min-height: 25%;
-    background-color: #4E342E;
+    margin: 0 auto;
+    background-color: #2d2d2d;
 }
 
 #strip-content {
     display: block;
+    text-align: center;
+    color: #dedede;
     font-family: "League Gothic Regular";
     font-size: 30px;
-    color: #dedede;
-    text-align: center;
 }
 
 
 /*LIFE BEFORE SECTION*/
 
 #life-before {
-    margin: 0 auto;
     min-height: 100%;
+    margin: 0 auto;
     background-image: url("sample2.jpg");
-    /*parallax*/
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
 }
 
 #life-before-content {
     position: absolute;
-    text-align: center;
-    font-family: 'Oswald-Light';
-    color: #dedede;
     padding-top: 15%;
+    text-align: center;
+    color: #dedede;
+    font-family: 'Oswald-Light';
     font-size: 30px;
 }
 
 
-/*STATS SECTION*/
+/*Happening Now Section */
 
-#stats {
-    margin: 0 auto;
-    min-height: 45%;
-    background-image: url("b3.jpg");
-    /*parallax*/
+#happening-now {
+    min-height: 100%;
+    background-image: url("currentstate-bg.jpg");
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
+    font-family: "Rubik";
 }
 
-#stats-content {
-    position: absolute;
+#happening-now #happening-now-heading h1 {
+    z-index: 1;
+    left: 50%;
+    margin-left: auto;
+    transition: 0.7s ease;
     text-align: center;
-    font-family: arial;
+    text-transform: uppercase;
+    opacity: 0.9;
+    font-family: "League Gothic Regular";
+    font-size: 95px;
+}
+
+#happening-now-content {
+    width: 60%;
+    margin: auto;
     color: #dedede;
-    padding-top: 15%;
+}
+
+#happening-now-content p {
+    text-indent: 40px;
+}
+
+#happening-now-tag {
+    text-align: center;
+    text-transform: uppercase;
+    color: #0097A7;
     font-size: 30px;
+}
+
+#guide-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #E0E0E0;
+    background-color: #009688;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 40px;
+}
+
+#guide-icon {
+    position: absolute;
+    width: 50px;
+    padding-left: 7px;
+}
+
+#guide-intro {
+    margin: 0 auto;
+    padding-bottom: 10px;
+    text-indent: 40px;
+    color: #E0F2F1;
+    background-color: #009688;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+
+#guide-intro p {
+    width: 70%;
+    margin: auto;
+}
+
+.guide-header {
+    float: left;
+    padding-top: 10px;
+    padding-left: 100px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 40px;
+}
+
+#guide-1 p {
+    float: right;
+    width: 50%;
+    padding-top: 10px;
+    padding-right: 60px;
+    padding-bottom: 10px;
+}
+
+#guide-1 {
+    overflow: auto;
+    color: #FFE0B2;
+    background-color: #e57373;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+
+#guide-2 {
+    overflow: auto;
+    color: #B3E5FC;
+    background-color: #64b5f6;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+
+#guide-2 p {
+    float: right;
+    width: 50%;
+    padding-top: 10px;
+    padding-right: 60px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+#guide-3 {
+    overflow: auto;
+    color: #FCE4EC;
+    background-color: #CD6B97;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+
+#guide-3 p {
+    float: right;
+    width: 50%;
+    padding-top: 10px;
+    padding-right: 60px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+#guide-4 {
+    overflow: auto;
+    color: #FFFDE7;
+    background-color: #DBD880;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+
+#guide-4 p {
+    float: right;
+    width: 50%;
+    padding-top: 10px;
+    padding-right: 60px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+#guide-5 {
+    overflow: auto;
+    color: #CFD8DC;
+    background-color: #557780;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+
+#guide-5 p {
+    float: right;
+    width: 50%;
+    padding-top: 10px;
+    padding-right: 60px;
+    padding-bottom: 10px;
+}
+
+#guide-6 {
+    overflow: auto;
+    color: #F3E5F5;
+    background-color: #AB47BC;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+
+#guide-6 p {
+    float: right;
+    width: 50%;
+    padding-top: 10px;
+    padding-right: 60px;
+    padding-bottom: 10px;
+}
+
+h3 {
+    margin: 0;
 }
