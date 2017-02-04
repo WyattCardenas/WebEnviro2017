@@ -22,14 +22,6 @@ html, body {
 }
 
 
-/* Open Sans*/
-
-@font-face {
-    font-family: 'Open Sans';
-    src: url('OpenSans-CondLight.ttf');
-}
-
-
 /* Rubik Regular*/
 
 @font-face {
@@ -184,38 +176,16 @@ h1, p {
 }
 
 
-/*LIFE BEFORE SECTION*/
-
-#life-before {
-    min-height: 100%;
-    margin: 0 auto;
-    background-image: url("sample2.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-}
-
-#life-before-content {
-    position: absolute;
-    padding-top: 15%;
-    text-align: center;
-    color: #dedede;
-    font-family: 'Oswald-Light';
-    font-size: 30px;
-}
-
-
 /*Happening Now Section */
 
 #happening-now {
-    min-height: 100%;
-    background-image: url("currentstate-bg.jpg");
+    min-height: 50%;
+    background-image: url("bg3.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    font-family: "Rubik";
+    font-family: 'Rubik', sans-serif;
 }
 
 #happening-now #happening-now-heading h1 {
@@ -226,7 +196,7 @@ h1, p {
     text-align: center;
     text-transform: uppercase;
     opacity: 0.9;
-    font-family: "League Gothic Regular";
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 95px;
 }
 
@@ -238,35 +208,66 @@ h1, p {
 
 #happening-now-content p {
     text-indent: 40px;
+    z-index: 2;
 }
 
 #happening-now-tag {
     text-align: center;
     text-transform: uppercase;
-    color: #0097A7;
-    font-size: 30px;
+    color: #81D4FA;
+    font-size: 50px;
+    opacity: 0.7;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    padding-bottom: 20px;
 }
 
+#happening-now img {
+    width: 250px;
+}
+
+
 /* Stats Section */
+
+#stats {
+    min-height: 100%;
+    margin: 0 auto;
+    background-image: url("bg2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: #dedede;
+}
+
 .chart-size {
     width: 70%;
 }
 
 .stats-charts {
     text-align: center;
-    background-color: #795548;
     padding-bottom: 10px;
     padding-top: 20px;
 }
 
 .stats-charts h2 {
-    font-family: 'Open Sans';
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 35px;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 10px;
 }
+
 .stats-charts div h2 {
-    font-family: 'Open Sans';
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 25px;
 }
+
+.stats-charts img {
+    width: 40%;
+}
+
+
+/*Guide Section*/
 
 #guide-title {
     padding-top: 10px;
@@ -413,7 +414,7 @@ h1, p {
 #guide-6 {
     overflow: auto;
     color: #F3E5F5;
-    background-color: #AB47BC;
+    background-color: #BA68C8;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -432,4 +433,21 @@ h1, p {
 
 h3 {
     margin: 0;
+}
+
+
+/*References Section*/
+
+#references {
+    font-family: 'Rubik', sans-serif;
+    background-color: #2d2d2d;
+    color: #F5F5F5;
+}
+
+#references-content {
+    padding: 10px;
+}
+
+#references #references-content p {
+    width: 60%;
 }
