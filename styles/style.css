@@ -42,7 +42,7 @@ html, body {
 }
 
 #navigationbar ul {
-    padding-right: 100px;
+    padding-right: 50px;
     list-style: none;
 }
 
@@ -51,7 +51,7 @@ html, body {
 }
 
 #navigationbar ul li a {
-    padding: 14px 16px;
+    padding: 5px 10px;
     text-decoration: none;
     text-transform: uppercase;
     color: #dedede;
@@ -168,11 +168,11 @@ h1, p {
 }
 
 #republic-act-strip-content {
+    padding: 10px;
     text-align: center;
     color: #dedede;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 30px;
-    padding: 10px;
 }
 
 #republic-act-strip-content a {
@@ -264,7 +264,7 @@ h1, p {
 }
 
 .button-content {
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 #environmental-code-content a {
