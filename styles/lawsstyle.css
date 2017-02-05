@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.content {
+    width: 40%;
+    margin-left: 25%;
+    padding-left: 5%;
+    padding-right: 5%;;
+    padding-top: 5%;
+    background-color: #4CAF50;
+    color: white;
+    padding-bottom: 5%;
+}
+
+.content h1, h3, h4 {
+    text-align: center;
+}
+
+.indent {
+    margin-left: 50px;;
+}
