@@ -110,7 +110,7 @@ html, body {
     top: 20%;
     left: 20%;
     text-align: center;
-    font-family: "Oswald-Light";
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 20px;
 }
 
@@ -145,8 +145,8 @@ html, body {
 
 .right-header p {
     text-align: center;
-    font-family: 'Oswald-Light';
-    font-size: 20px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 50px;
 }
 
 .right-header:hover {
@@ -207,22 +207,68 @@ h1, p {
 }
 
 #happening-now-content p {
-    text-indent: 40px;
     z-index: 2;
+    text-indent: 40px;
 }
 
 #happening-now-tag {
+    padding-bottom: 20px;
     text-align: center;
     text-transform: uppercase;
-    color: #81D4FA;
-    font-size: 50px;
     opacity: 0.7;
+    color: #FFF59D;
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    padding-bottom: 20px;
+    font-size: 50px;
 }
 
 #happening-now img {
     width: 250px;
+}
+
+
+/*Environmental code strip SECTION*/
+
+#environmental-code-strip {
+    min-height: 10%;
+    margin: 0 auto;
+    background-color: #009688;
+}
+
+#environmental-code-content {
+    text-align: center;
+    color: #B2DFDB;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    text-transform: capitalize;
+    padding: 25px;
+}
+
+.button {
+    border: 2px solid;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    text-align: center;
+    transition: 0.4s ease;
+}
+
+.button:hover {
+    opacity: 0.4;
+}
+
+.button-content {
+    padding-top: 10px;
+}
+
+#environmental-code-content a {
+    text-decoration: none;
+    color: #E0E0E0;
+}
+
+h2 {
+    margin: 0;
 }
 
 
@@ -231,12 +277,12 @@ h1, p {
 #stats {
     min-height: 100%;
     margin: 0 auto;
+    color: #dedede;
     background-image: url("bg2.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    color: #dedede;
 }
 
 .chart-size {
@@ -244,17 +290,17 @@ h1, p {
 }
 
 .stats-charts {
-    text-align: center;
-    padding-bottom: 10px;
     padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
 .stats-charts h2 {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 35px;
     width: 60%;
     margin: 0 auto;
     padding-top: 10px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 35px;
 }
 
 .stats-charts div h2 {
@@ -439,9 +485,9 @@ h3 {
 /*References Section*/
 
 #references {
-    font-family: 'Rubik', sans-serif;
-    background-color: #2d2d2d;
     color: #F5F5F5;
+    background-color: #2d2d2d;
+    font-family: 'Rubik', sans-serif;
 }
 
 #references-content {
