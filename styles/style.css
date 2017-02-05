@@ -161,18 +161,23 @@ h1, p {
 
 /*STRIP SECTION*/
 
-#strip {
+#republic-act-strip {
     min-height: 25%;
     margin: 0 auto;
     background-color: #2d2d2d;
 }
 
-#strip-content {
-    display: block;
+#republic-act-strip-content {
     text-align: center;
     color: #dedede;
-    font-family: "League Gothic Regular";
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 30px;
+    padding: 10px;
+}
+
+#republic-act-strip-content a {
+    text-decoration: none;
+    color: #E0E0E0;
 }
 
 
