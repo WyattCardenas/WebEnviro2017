@@ -8,26 +8,39 @@ html, body {
 }
 
 .content {
-    width: 40%;
-    margin-left: 25%;
+    width: 50%;
+    margin-left: 20%;
     padding-left: 5%;
-    padding-right: 5%;;
+    padding-right: 5%;
     padding-top: 5%;
     background-color: #4CAF50;
     color: white;
     padding-bottom: 5%;
 }
 
-.content h1, h3, h4 {
+.content h1, h3, h4, h5 {
     text-align: center;
-}
-
-.indent {
-    margin-left: 50px;;
 }
 
 .back {
     float: left;
     margin-left: -20%;
     position: fixed;
+}
+
+h1, h3 {
+    padding-bottom: 10px;
+}
+
+h4, p {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+b {
+    font-size: 15px;   
+}
+
+.indent {
+    margin-left: 5%;
 }

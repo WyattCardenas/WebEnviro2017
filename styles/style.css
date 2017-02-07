@@ -39,6 +39,7 @@ html, body {
     margin-top: 10px;
     text-align: right;
     background-color: transparent;
+    z-index: 1000;
 }
 
 #navigationbar ul {
