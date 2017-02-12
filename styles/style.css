@@ -32,7 +32,7 @@ html, body {
 
 /*NAVIGATION BAR*/
 
-#navigationbar {
+nav {
     position: absolute;
     position: fixed;
     width: 100%;
@@ -42,16 +42,16 @@ html, body {
     z-index: 1000;
 }
 
-#navigationbar ul {
+nav ul {
     padding-right: 50px;
     list-style: none;
 }
 
-#navigationbar ul li {
+nav ul li {
     display: inline-block;
 }
 
-#navigationbar ul li a {
+nav ul li a {
     padding: 5px 10px;
     text-decoration: none;
     text-transform: uppercase;
@@ -61,7 +61,7 @@ html, body {
     font-size: 15px;
 }
 
-#navigationbar ul li a:hover {
+nav ul li a:hover {
     opacity: 0.5;
 }
 
@@ -79,7 +79,7 @@ html, body {
     background-size: cover;
 }
 
-#heading-intro p {
+#heading-intro h1 {
     min-width: 100%;
     padding-top: 15%;
     transition: 1s ease;
@@ -89,7 +89,7 @@ html, body {
     font-size: 100px;
 }
 
-#heading:hover #heading-intro>p {
+#heading:hover #heading-intro>h1 {
     opacity: 0;
 }
 
@@ -106,7 +106,7 @@ html, body {
     opacity: 0;
 }
 
-.left-header p {
+.left-header h1 {
     position: absolute;
     top: 20%;
     left: 20%;
@@ -144,7 +144,7 @@ html, body {
     opacity: 0.3;
 }
 
-.right-header p {
+.right-header h1 {
     text-align: center;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 50px;
@@ -194,7 +194,7 @@ h1, p {
     font-family: 'Rubik', sans-serif;
 }
 
-#happening-now #happening-now-heading h1 {
+#happening-now #happening-now-heading h2 {
     z-index: 1;
     left: 50%;
     margin-left: auto;
@@ -215,6 +215,7 @@ h1, p {
 #happening-now-content p {
     z-index: 2;
     text-indent: 40px;
+    padding-bottom: 15px;
 }
 
 #happening-now-tag {
@@ -327,7 +328,7 @@ h2 {
 }
 
 #pollution-title {
-    padding: 5px;
+    padding: 15px;
     text-align: center;
     color: #D7CCC8;
     background-color: #8D6E63;
@@ -342,7 +343,9 @@ h2 {
     font-size: 30px;
 }
 
+
 /* Soil Pollution */
+
 #soil {
     width: 100%;
     padding-top: 15%;
@@ -378,14 +381,16 @@ h2 {
     position: absolute;
 }
 
-#soil-content h2 {
+#soil-content h3 {
     text-align: center;
     color: #FFCCBC;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 30px;
 }
 
+
 /* Water Pollution */
+
 #water {
     width: 100%;
     padding-top: 15%;
@@ -420,14 +425,16 @@ h2 {
     position: absolute;
 }
 
-#water-content h2 {
+#water-content h3 {
     text-align: center;
     color: #B3E5FC;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 30px;
 }
 
+
 /* Air Pollution */
+
 #air {
     width: 100%;
     padding-top: 15%;
@@ -462,14 +469,16 @@ h2 {
     width: 100%;
 }
 
-#air-content h2 {
+#air-content h3 {
     text-align: center;
     color: #F9DDE7;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 30px;
 }
 
+
 /* Noise Pollution */
+
 #noise {
     width: 100%;
     padding-top: 15%;
@@ -504,14 +513,16 @@ h2 {
     position: absolute;
 }
 
-#noise-content h2 {
+#noise-content h3 {
     text-align: center;
     color: #CFD8DC;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 30px;
 }
 
+
 /* Thermal Pollution */
+
 #thermal {
     width: 100%;
     padding-top: 15%;
@@ -547,14 +558,16 @@ h2 {
     opacity: 1;
 }
 
-#thermal-content h2 {
+#thermal-content h3 {
     text-align: center;
     color: #EFDBF2;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 30px;
 }
 
+
 /* Light Pollution */
+
 #light {
     width: 100%;
     padding-top: 15%;
@@ -569,7 +582,7 @@ h2 {
     transition: 1s ease-in-out;
     opacity: 0;
     color: white;
-    background-color: #ccc976;
+    background-color: #5D4037;
 }
 
 #light p {
@@ -589,7 +602,7 @@ h2 {
     opacity: 1;
 }
 
-#light-content h2 {
+#light-content h3 {
     text-align: center;
     color: #F1EFC0;
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -611,10 +624,11 @@ h2 {
     background-color: #009688;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 40px;
+    text-transform: uppercase;
 }
 
 #guide-icon {
-    position: absolute;
+    display: inline-block;
     width: 50px;
     padding-left: 7px;
 }
@@ -772,16 +786,68 @@ h3 {
 
 /*References Section*/
 
-#references {
+footer {
     color: #F5F5F5;
     background-color: #2d2d2d;
     font-family: 'Rubik', sans-serif;
-}
-
-#references-content {
     padding: 10px;
 }
 
-#references #references-content p {
-    width: 60%;
+footer li {
+    list-style: none;
+    width: 70%;
+}
+
+footer ul {
+    padding-bottom: 40px;
+}
+
+#ownership {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+#about {
+    background-color: #009688;
+    margin: auto;
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#about h2 {
+    color: #B2DFDB;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 40px;
+    padding-left: 20px;
+}
+
+#about p {
+    font-family: 'Rubik', sans-serif;
+    color: #dedede;
+    padding: 10px;
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+
+.members img {
+    width: 130px;
+    text-align: center;
+}
+
+.members {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+.members p {
+    width: 100%;
 }
