@@ -323,7 +323,6 @@ h2 {
 
 #pollution {
     overflow: hidden;
-    min-height: 10%;
     margin: 0 auto;
 }
 
@@ -343,10 +342,19 @@ h2 {
     font-size: 30px;
 }
 
+/* Soil Pollution */
 #soil {
     width: 100%;
-    margin: 0 auto;
-    padding: 20px;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    position: relative;
+}
+
+#soil-text {
+    z-index: 1;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
     transition: 1s ease-in-out;
     opacity: 0;
     color: #FFCCBC;
@@ -360,17 +368,14 @@ h2 {
     font-family: 'Rubik', sans-serif;
 }
 
-#soil:hover {
+#soil-text:hover {
     opacity: 1;
 }
 
-#soil-content {
-    z-index: 1;
-    background-image: url('soil.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+#soil-p {
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 #soil-content h2 {
@@ -380,10 +385,18 @@ h2 {
     font-size: 30px;
 }
 
+/* Water Pollution */
 #water {
     width: 100%;
-    margin: 0 auto;
-    padding: 20px;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    position: relative;
+}
+
+#water-text {
+    z-index: 1;
+    padding-top: 30px;
+    padding-bottom: 30px;
     transition: 1s ease-in-out;
     opacity: 0;
     color: #B3E5FC;
@@ -397,17 +410,14 @@ h2 {
     font-family: 'Rubik', sans-serif;
 }
 
-#water:hover {
+#water-text:hover {
     opacity: 1;
 }
 
-#water-content {
-    z-index: 1;
-    background-image: url('water.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+#water-p {
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
 #water-content h2 {
@@ -417,10 +427,18 @@ h2 {
     font-size: 30px;
 }
 
+/* Air Pollution */
 #air {
     width: 100%;
-    margin: 0 auto;
-    padding: 20px;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    position: relative;
+}
+
+#air-text {
+    z-index: 1;
+    padding-top: 30px;
+    padding-bottom: 30px;
     transition: 1s ease-in-out;
     opacity: 0;
     color: #B3E5FC;
@@ -434,17 +452,14 @@ h2 {
     font-family: 'Rubik', sans-serif;
 }
 
-#air:hover {
+#air-text:hover {
     opacity: 1;
 }
 
-#air-content {
-    z-index: 1;
-    background-image: url('air.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+#air-p {
+    height: 100%;
+    position: absolute;
+    width: 100%;
 }
 
 #air-content h2 {
@@ -454,10 +469,18 @@ h2 {
     font-size: 30px;
 }
 
+/* Noise Pollution */
 #noise {
     width: 100%;
-    margin: 0 auto;
-    padding: 20px;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    position: relative;
+}
+
+#noise-text {
+    z-index: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
     transition: 1s ease-in-out;
     opacity: 0;
     color: #CFD8DC;
@@ -471,17 +494,14 @@ h2 {
     font-family: 'Rubik', sans-serif;
 }
 
-#noise:hover {
+#noise-text:hover {
     opacity: 1;
 }
 
-#noise-content {
-    z-index: 1;
-    background-image: url('noise.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+#noise-p {
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
 #noise-content h2 {
@@ -491,10 +511,19 @@ h2 {
     font-size: 30px;
 }
 
+/* Thermal Pollution */
 #thermal {
     width: 100%;
-    margin: 0 auto;
-    padding: 20px;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    position: relative;
+}
+
+#thermal-text {
+    z-index: 1;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
     transition: 1s ease-in-out;
     opacity: 0;
     color: #EFDBF2;
@@ -508,17 +537,14 @@ h2 {
     font-family: 'Rubik', sans-serif;
 }
 
-#thermal:hover {
-    opacity: 1;
+#thermal-p {
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
-#thermal-content {
-    z-index: 1;
-    background-image: url('thermal.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+#thermal-text:hover {
+    opacity: 1;
 }
 
 #thermal-content h2 {
@@ -528,10 +554,18 @@ h2 {
     font-size: 30px;
 }
 
+/* Light Pollution */
 #light {
     width: 100%;
-    margin: 0 auto;
-    padding: 20px;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    position: relative;
+}
+
+#light-text {
+    z-index: 1;
+    padding-top: 30px;
+    padding-bottom: 30px;
     transition: 1s ease-in-out;
     opacity: 0;
     color: white;
@@ -545,17 +579,14 @@ h2 {
     font-family: 'Rubik', sans-serif;
 }
 
-#light:hover {
-    opacity: 1;
+#light-p {
+    width: 100%;
+    position: absolute;
+    height: 100%;
 }
 
-#light-content {
-    z-index: 1;
-    background-image: url('light.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+#light-text:hover {
+    opacity: 1;
 }
 
 #light-content h2 {
@@ -567,6 +598,10 @@ h2 {
 
 
 /*Guide Section*/
+
+#guide-contents {
+    position: relative;
+}
 
 #guide-title {
     padding-top: 10px;
