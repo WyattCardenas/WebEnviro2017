@@ -29,6 +29,11 @@ html, body {
     src: url('Rubik-regular.ttf');
 }
 
+/* Yanone Kaffeesatz Regular */
+@font-face {
+    font-family: 'Yanone Kaffeesatz';
+    src: url('YanoneKaffeesatz-Regular.ttf');
+}
 
 /*NAVIGATION BAR*/
 
@@ -176,6 +181,10 @@ h1, p {
     font-size: 30px;
 }
 
+#republic-act-strip-content h2 {
+    padding-top: 20px;
+}
+
 #republic-act-strip-content a {
     text-decoration: none;
     color: #E0E0E0;
@@ -196,6 +205,8 @@ h1, p {
 
 #happening-now #happening-now-heading h2 {
     z-index: 1;
+    padding-top: 5%;
+    padding-bottom: 5%;
     left: 50%;
     margin-left: auto;
     transition: 0.7s ease;
@@ -220,6 +231,7 @@ h1, p {
 
 #happening-now-tag {
     padding-bottom: 20px;
+    padding-top: 20px;
     text-align: center;
     text-transform: uppercase;
     opacity: 0.7;
@@ -305,9 +317,10 @@ h2 {
 .stats-charts h2 {
     width: 60%;
     margin: 0 auto;
-    padding-top: 10px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 35px;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .stats-charts div h2 {
@@ -319,16 +332,17 @@ h2 {
     width: 40%;
 }
 
-
 /*Pollution Section*/
 
 #pollution {
     overflow: hidden;
     margin: 0 auto;
+    
 }
 
 #pollution-title {
-    padding: 15px;
+    padding-top: 2%;
+    padding-bottom: 2%;
     text-align: center;
     color: #D7CCC8;
     background-color: #8D6E63;
@@ -524,7 +538,7 @@ h2 {
 /* Thermal Pollution */
 
 #thermal {
-    width: 100%;
+    width: 100%;    
     padding-top: 15%;
     padding-bottom: 15%;
     position: relative;
