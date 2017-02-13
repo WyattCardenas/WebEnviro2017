@@ -359,40 +359,30 @@ h2 {
 
 
 /* Soil Pollution */
-
 #soil {
-    width: 100%;
-    padding-top: 15%;
-    padding-bottom: 15%;
-    position: relative;
-}
-
-#soil-text {
-    z-index: 1;
-    width: 100%;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    transition: 1s ease-in-out;
-    opacity: 0;
-    color: #FFCCBC;
     background-color: #FF8A65;
 }
 
+#soil-text {
+    margin-left: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 9%;
+    color: #FFCCBC;
+}
+
 #soil p {
-    width: 60%;
     margin: 0 auto;
     text-indent: 20px;
     font-family: 'Rubik', sans-serif;
 }
 
-#soil-text:hover {
-    opacity: 1;
-}
-
 #soil-p {
-    height: 100%;
-    width: 100%;
-    position: absolute;
+    float:left;
+    width: 45%;
+    margin-left: 2%;
+    margin-top: 2%;
 }
 
 #soil-content h3 {
@@ -404,39 +394,30 @@ h2 {
 
 
 /* Water Pollution */
-
 #water {
-    width: 100%;
-    padding-top: 15%;
-    padding-bottom: 15%;
-    position: relative;
-}
-
-#water-text {
-    z-index: 1;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    transition: 1s ease-in-out;
-    opacity: 0;
-    color: #B3E5FC;
     background-color: #64B5F6;
 }
 
+#water-text {
+    margin-right: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    color: #B3E5FC;
+}
+
 #water p {
-    width: 60%;
     margin: 0 auto;
     text-indent: 20px;
     font-family: 'Rubik', sans-serif;
 }
 
-#water-text:hover {
-    opacity: 1;
-}
-
 #water-p {
-    width: 100%;
-    height: 100%;
-    position: absolute;
+    float: right;
+    width: 45%;
+    margin-right: 2%;
+    margin-top: 2%;
 }
 
 #water-content h3 {
@@ -450,37 +431,29 @@ h2 {
 /* Air Pollution */
 
 #air {
-    width: 100%;
-    padding-top: 15%;
-    padding-bottom: 15%;
-    position: relative;
-}
-
-#air-text {
-    z-index: 1;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    transition: 1s ease-in-out;
-    opacity: 0;
-    color: #B3E5FC;
     background-color: #CD6B97;
 }
 
+#air-text {
+    margin-left: 50%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 10%;
+    color: #B3E5FC;
+}
+
 #air p {
-    width: 60%;
     margin: 0 auto;
     text-indent: 20px;
     font-family: 'Rubik', sans-serif;
 }
 
-#air-text:hover {
-    opacity: 1;
-}
-
 #air-p {
-    height: 100%;
-    position: absolute;
-    width: 100%;
+    float:left;
+    width: 45%;
+    margin-left: 2%;
+    margin-top: 2%;
 }
 
 #air-content h3 {
@@ -490,41 +463,32 @@ h2 {
     font-size: 30px;
 }
 
-
 /* Noise Pollution */
 
 #noise {
-    width: 100%;
-    padding-top: 15%;
-    padding-bottom: 15%;
-    position: relative;
-}
-
-#noise-text {
-    z-index: 1;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    transition: 1s ease-in-out;
-    opacity: 0;
-    color: #CFD8DC;
     background-color: #557780;
 }
 
+#noise-text {
+    margin-right: 50%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 4%;
+    color: #CFD8DC;
+}
+
 #noise p {
-    width: 60%;
     margin: 0 auto;
     text-indent: 20px;
     font-family: 'Rubik', sans-serif;
 }
 
-#noise-text:hover {
-    opacity: 1;
-}
-
 #noise-p {
-    width: 100%;
-    height: 100%;
-    position: absolute;
+    float: right;
+    width: 45%;
+    margin-right: 2%;
+    margin-top: 2%;
 }
 
 #noise-content h3 {
