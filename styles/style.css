@@ -297,7 +297,6 @@ h2 {
 /* Stats Section */
 
 #stats {
-    min-height: 100%;
     margin: 0 auto;
     color: #dedede;
     background-image: url("bg2.jpg");
@@ -305,36 +304,124 @@ h2 {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    padding-bottom: 5%;
 }
 
-.chart-size {
-    width: 70%;
+.stat-header {
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.stats-charts p {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+}
+
+#chart-1 {
+    width: 45%;
+    margin-left: 10%;
+    position: absolute;
+}
+
+#stat-1 {
+    height: 430px;
+}
+
+#stat-1-content {
+    margin-left: 55%;
+    margin-right: 5%;
+    padding-left: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+#stat-1-content p {
+    width: 90%;
+}
+
+#chart-2 {
+    width: 45%;
+    margin-left: 10%;
+    position: absolute;
+}
+
+#stat-2 {
+    height: 430px;
+}
+
+#stat-2-content {
+    margin-left: 55%;
+    margin-right: 5%;
+    padding-left: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+#stat-2-content p {
+    width: 90%;
+}
+
+#chart-3 {
+    width: 45%;
+    margin-left: 10%;
+    position: absolute;
+}
+
+#stat-3 {
+    height: 500px;
+}
+
+#stat-3-content {
+    margin-left: 55%;
+    margin-right: 5%;
+    padding-left: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+#stat-3-content p {
+    width: 90%;
+}
+
+#chart-4 {
+    width: 45%;
+    margin-left: 10%;
+    position: absolute;
+}
+
+#stat-4 {
+    height: 430px;
+}
+
+#stat-4-content {
+    margin-left: 55%;
+    margin-right: 5%;
+    padding-left: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+#stat-4-content p {
+    width: 90%;
 }
 
 .stats-charts {
     padding-top: 20px;
     padding-bottom: 10px;
-    text-align: center;
 }
 
-.stats-charts h2 {
-    width: 60%;
-    margin: 0 auto;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 35px;
+#stats-content div h2 {
+    margin-left: 10%;
+    width: 45%;
     padding-top: 2%;
     padding-bottom: 2%;
-}
-
-.stats-charts div h2 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 25px;
+    text-align: center;
 }
-
-.stats-charts img {
-    width: 40%;
-}
-
 
 /*Pollution Section*/
 
@@ -365,6 +452,7 @@ h2 {
 
 #soil {
     background-color: #FF8A65;
+    height: 430px;
 }
 
 #soil-text {
@@ -372,7 +460,6 @@ h2 {
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 5%;
-    padding-bottom: 9%;
     color: #FFCCBC;
 }
 
@@ -383,7 +470,7 @@ h2 {
 }
 
 #soil-p {
-    float: left;
+    position: absolute;
     width: 45%;
     margin-left: 2%;
     margin-top: 2%;
@@ -401,6 +488,7 @@ h2 {
 
 #water {
     background-color: #64B5F6;
+    height: 430px;
 }
 
 #water-text {
@@ -408,7 +496,6 @@ h2 {
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 5%;
-    padding-bottom: 10%;
     color: #B3E5FC;
 }
 
@@ -419,9 +506,10 @@ h2 {
 }
 
 #water-p {
-    float: right;
+    position: absolute;
+    margin-left: 53%;
     width: 45%;
-    margin-right: 2%;
+    margin-right: 5%;
     margin-top: 2%;
 }
 
@@ -437,6 +525,7 @@ h2 {
 
 #air {
     background-color: #CD6B97;
+    height: 430px;
 }
 
 #air-text {
@@ -444,7 +533,6 @@ h2 {
     padding-top: 5%;
     padding-left: 5%;
     padding-right: 5%;
-    padding-bottom: 10%;
     color: #B3E5FC;
 }
 
@@ -455,7 +543,7 @@ h2 {
 }
 
 #air-p {
-    float: left;
+    position: absolute;
     width: 45%;
     margin-left: 2%;
     margin-top: 2%;
@@ -473,6 +561,7 @@ h2 {
 
 #noise {
     background-color: #557780;
+    height: 430px;
 }
 
 #noise-text {
@@ -480,7 +569,6 @@ h2 {
     padding-top: 5%;
     padding-left: 5%;
     padding-right: 5%;
-    padding-bottom: 4%;
     color: #CFD8DC;
 }
 
@@ -491,9 +579,10 @@ h2 {
 }
 
 #noise-p {
-    float: right;
+    position: absolute;
+    margin-left: 53%;
     width: 45%;
-    margin-right: 2%;
+    margin-right: 5%;
     margin-top: 2%;
 }
 
@@ -508,38 +597,29 @@ h2 {
 /* Thermal Pollution */
 
 #thermal {
-    width: 100%;
-    padding-top: 15%;
-    padding-bottom: 15%;
-    position: relative;
+    background-color: #BA68C8;
+    height: 430px;
 }
 
 #thermal-text {
-    z-index: 1;
-    width: 100%;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    transition: 1s ease-in-out;
-    opacity: 0;
+    margin-left: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
     color: #EFDBF2;
-    background-color: #BA68C8;
 }
 
 #thermal p {
-    width: 60%;
     margin: 0 auto;
     text-indent: 20px;
     font-family: 'Rubik', sans-serif;
 }
 
 #thermal-p {
-    width: 100%;
-    height: 100%;
     position: absolute;
-}
-
-#thermal-text:hover {
-    opacity: 1;
+    width: 45%;
+    margin-left: 2%;
+    margin-top: 2%;
 }
 
 #thermal-content h3 {
@@ -549,41 +629,33 @@ h2 {
     font-size: 30px;
 }
 
-
 /* Light Pollution */
 
 #light {
-    width: 100%;
-    padding-top: 15%;
-    padding-bottom: 15%;
-    position: relative;
+    background-color: #5D4037;
+    height: 430px;
 }
 
 #light-text {
-    z-index: 1;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    transition: 1s ease-in-out;
-    opacity: 0;
+    margin-right: 50%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
     color: white;
-    background-color: #5D4037;
 }
 
 #light p {
-    width: 60%;
     margin: 0 auto;
     text-indent: 20px;
     font-family: 'Rubik', sans-serif;
 }
 
 #light-p {
-    width: 100%;
     position: absolute;
-    height: 100%;
-}
-
-#light-text:hover {
-    opacity: 1;
+    margin-left: 53%;
+    width: 45%;
+    margin-right: 5%;
+    margin-top: 2%;
 }
 
 #light-content h3 {
@@ -922,4 +994,32 @@ footer ul {
     text-align: center;
     padding-bottom: 10px;
     color: #C5E1A5;
+}
+
+/* Trivias Section */
+.trivia  {
+    background-color: black;
+    text-align: center;
+    padding-bottom: 2%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    opacity: .8;
+}
+
+.trivia-content h3 {
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+.trivia-content p {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 1%;
+}
+
+#trivia-1 {
+    width: 30%;
+    border: solid 2px white;
 }
