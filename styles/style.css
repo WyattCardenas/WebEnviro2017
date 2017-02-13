@@ -29,11 +29,14 @@ html, body {
     src: url('Rubik-regular.ttf');
 }
 
+
 /* Yanone Kaffeesatz Regular */
+
 @font-face {
     font-family: 'Yanone Kaffeesatz';
     src: url('YanoneKaffeesatz-Regular.ttf');
 }
+
 
 /*NAVIGATION BAR*/
 
@@ -332,12 +335,12 @@ h2 {
     width: 40%;
 }
 
+
 /*Pollution Section*/
 
 #pollution {
     overflow: hidden;
     margin: 0 auto;
-    
 }
 
 #pollution-title {
@@ -359,6 +362,7 @@ h2 {
 
 
 /* Soil Pollution */
+
 #soil {
     background-color: #FF8A65;
 }
@@ -379,7 +383,7 @@ h2 {
 }
 
 #soil-p {
-    float:left;
+    float: left;
     width: 45%;
     margin-left: 2%;
     margin-top: 2%;
@@ -394,6 +398,7 @@ h2 {
 
 
 /* Water Pollution */
+
 #water {
     background-color: #64B5F6;
 }
@@ -450,7 +455,7 @@ h2 {
 }
 
 #air-p {
-    float:left;
+    float: left;
     width: 45%;
     margin-left: 2%;
     margin-top: 2%;
@@ -462,6 +467,7 @@ h2 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 30px;
 }
+
 
 /* Noise Pollution */
 
@@ -502,7 +508,7 @@ h2 {
 /* Thermal Pollution */
 
 #thermal {
-    width: 100%;    
+    width: 100%;
     padding-top: 15%;
     padding-bottom: 15%;
     position: relative;
@@ -828,4 +834,92 @@ footer ul {
 
 .members p {
     width: 100%;
+}
+
+
+/*Trash Section*/
+
+#trash {
+    background-color: #557780;
+    text-align: center;
+}
+
+#trash article {
+    padding: 30px;
+}
+
+#trash h2 {
+    color: #CFD8DC;
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+#trash p {
+    text-align: justify;
+    text-indent: 2em;
+    font-family: 'Rubik', sans-serif;
+    padding-bottom: 20px;
+}
+
+.highlight {
+    color: #F1EFC0;
+}
+
+.highlight_red {
+    color: #FFCDD2;
+}
+
+#trash-1 {
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 180px;
+    padding-left: 20px;
+}
+
+#trash-2 {
+    float: right;
+    width: 250px;
+    margin: 10px 0 0 10px;
+    padding-right: 10px;
+}
+
+#ranking {
+    display: block;
+    font-size: 20px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    text-decoration: overline underline;
+}
+
+#sign-1 {
+    display: block;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #D7CCC8;
+    text-align: center;
+}
+
+#sign-2 {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #FFE0B2;
+}
+
+#sign-3 {
+    display: block;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #C5E1A5;
 }
