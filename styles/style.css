@@ -209,7 +209,6 @@ h1, p {
     height: 100%;
     display: flex;
     align-items: center;
-    overflow: hidden;
 }
 
 #happening-now h2 {
@@ -238,16 +237,14 @@ h1, p {
     margin: auto;
     display: flex;
     align-items: center;
-    overflow: auto;
 }
 
-#rightHalf p {
+#rightHalf-content p {
     margin-left: 100px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 100px;
     text-indent: 20px;
-    text-align: justify;
     font-family: 'Rubrik', sans-serif;
 }
 
