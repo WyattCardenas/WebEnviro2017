@@ -209,6 +209,7 @@ h1, p {
     height: 100%;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 #happening-now h2 {
@@ -237,6 +238,7 @@ h1, p {
     margin: auto;
     display: flex;
     align-items: center;
+    overflow: auto;
 }
 
 #rightHalf p {
@@ -959,28 +961,38 @@ footer ul {
 /*Trash Section*/
 
 #trash {
-    background-color: #557780;
+    background-color: #009688;
     text-align: center;
 }
 
 #trash article {
-    padding: 30px;
+    padding-bottom: 20px;
 }
 
 #trash h2 {
+    padding-top: 20px;
     color: #CFD8DC;
     text-align: center;
     padding-bottom: 10px;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 40px;
+    font-family: 'Oswald-Light';
+    font-size: 50px;
     text-transform: uppercase;
 }
 
+#left-head {
+    width: 100%;
+}
+
 #trash p {
-    text-align: justify;
     text-indent: 2em;
+    text-align: justify;
     font-family: 'Rubik', sans-serif;
     padding-bottom: 20px;
+    font-style: 15px;
+}
+
+#trash-text {
+    margin: 90px;
 }
 
 .highlight {
@@ -988,21 +1000,21 @@ footer ul {
 }
 
 .highlight_red {
-    color: #FFCDD2;
+    color: #FF8A80;
+    font-size: 100px;
 }
 
 #trash-1 {
     float: left;
     margin: 0 10px 10px 0;
-    width: 180px;
-    padding-left: 20px;
+    width: 350px;
 }
 
 #trash-2 {
     float: right;
-    width: 250px;
-    margin: 10px 0 0 10px;
-    padding-right: 10px;
+    width: 350px;
+    margin: 10px 0px 0px 10px;
+    padding-bottom: 20px;
 }
 
 #ranking {
@@ -1016,18 +1028,18 @@ footer ul {
 #sign-1 {
     display: block;
     text-transform: uppercase;
-    font-size: 15px;
+    font-family: 'Oswald-Light';
+    font-size: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: #D7CCC8;
-    text-align: center;
+    color: #26C6DA;
 }
 
 #sign-2 {
     display: block;
-    text-align: center;
     text-transform: uppercase;
-    font-size: 20px;
+    font-family: 'Oswald-Light';
+    font-size: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
     color: #FFE0B2;
@@ -1036,9 +1048,9 @@ footer ul {
 #sign-3 {
     display: block;
     text-transform: uppercase;
-    font-size: 25px;
+    font-family: 'Oswald-Light';
+    font-size: 30px;
     padding-top: 10px;
-    text-align: center;
     padding-bottom: 10px;
     color: #C5E1A5;
 }
