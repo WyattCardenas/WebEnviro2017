@@ -120,7 +120,7 @@ nav ul li a:hover {
     left: 20%;
     text-align: center;
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 20px;
+    font-size: 40px;
 }
 
 #left-tree {
@@ -155,7 +155,7 @@ nav ul li a:hover {
 .right-header h1 {
     text-align: center;
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 50px;
+    font-size: 80px;
 }
 
 .right-header:hover {
@@ -171,21 +171,17 @@ h1, p {
 /*STRIP SECTION*/
 
 #republic-act-strip {
-    padding-bottom: 2%;
-    margin: 0 auto;
+    <<<<<<< Updated upstream padding-bottom: 2%;
+    =======>>>>>>>Stashed changes margin: 0 auto;
     background-color: #2d2d2d;
 }
 
 #republic-act-strip-content {
-    padding: 10px;
+    padding: 30px;
     text-align: center;
     color: #dedede;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 30px;
-}
-
-#republic-act-strip-content h2 {
-    padding-top: 20px;
 }
 
 #republic-act-strip-content a {
@@ -197,54 +193,99 @@ h1, p {
 /*Happening Now Section */
 
 #happening-now {
-    min-height: 50%;
     background-image: url("bg3.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    font-family: 'Rubik', sans-serif;
+    height: 100%;
 }
 
-#happening-now #happening-now-heading h2 {
-    z-index: 1;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    left: 50%;
-    margin-left: auto;
-    transition: 0.7s ease;
-    text-align: center;
-    text-transform: uppercase;
-    opacity: 0.9;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 95px;
+#lefthalf {
+    position: absolute;
+    width: 40%;
+    left: 0px;
+    background-color: #7E57C2;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
-#happening-now-content {
-    width: 60%;
+#happening-now h2 {
+    font-size: 130px;
+    font-family: "League Gothic Regular";
+    color: #B39DDB;
     margin: auto;
-    color: #dedede;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-#happening-now-content p {
-    z-index: 2;
-    text-indent: 40px;
-    padding-bottom: 15px;
+#happening-now h2:after {
+    content: url('tree.png') url('tree.png') url('tree.png');
+    padding-left: 20px;
+}
+
+#happening-now #beauty {
+    display: block;
+}
+
+#rightHalf {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    right: 0px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+#rightHalf p {
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+    text-indent: 20px;
+    text-align: justify;
+    font-family: 'Rubrik', sans-serif;
 }
 
 #happening-now-tag {
-    padding-bottom: 20px;
-    padding-top: 20px;
-    text-align: center;
+    display: block;
+    margin: auto;
     text-transform: uppercase;
-    opacity: 0.7;
-    color: #FFF59D;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 50px;
+    font-family: 'Oswald-Light';
+    font-size: 10px;
+    text-align: center;
+    transition: 0.5s ease;
+    transform: scale(0.8);
 }
 
-#happening-now img {
-    width: 250px;
+#happening-now-tag:hover {
+    transform: scale(1);
+}
+
+#happening-now-tag #morefun {
+    display: block;
+    font-size: 10px;
+    text-align: center;
+}
+
+#happening-now-tag #phil {
+    display: block;
+    font-size: 40px;
+    text-align: center;
+}
+
+#tag-1 {
+    color: #2b80b9;
+}
+
+#tag-2 {
+    color: #E74B3C;
+}
+
+#tag-3 {
+    color: #F2C311;
 }
 
 
@@ -254,6 +295,7 @@ h1, p {
     min-height: 10%;
     margin: 0 auto;
     background-color: #009688;
+    font-family: 'Oswald-Light';
 }
 
 #environmental-code-content {
@@ -422,6 +464,7 @@ h2 {
     font-size: 25px;
     text-align: center;
 }
+
 
 /*Pollution Section*/
 
@@ -626,6 +669,7 @@ h2 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 30px;
 }
+
 
 /* Light Pollution */
 
@@ -875,7 +919,7 @@ footer ul {
     text-align: center;
     text-transform: uppercase;
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 40px;
+    font-size: 50px;
     padding-left: 20px;
 }
 
@@ -891,6 +935,12 @@ footer ul {
 .members img {
     width: 130px;
     text-align: center;
+    transition: 0.5s ease;
+    transform: scale(0.8);
+}
+
+.members img:hover {
+    transform: scale(1);
 }
 
 .members {
@@ -993,8 +1043,10 @@ footer ul {
     color: #C5E1A5;
 }
 
+
 /* Trivias Section */
-.trivia  {
+
+.trivia {
     background-color: black;
     text-align: center;
     padding-bottom: 2%;
