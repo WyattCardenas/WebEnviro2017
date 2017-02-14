@@ -171,7 +171,7 @@ h1, p {
 /*STRIP SECTION*/
 
 #republic-act-strip {
-    min-height: 25%;
+    padding-bottom: 2%;
     margin: 0 auto;
     background-color: #2d2d2d;
 }
@@ -317,7 +317,7 @@ h2 {
 
 .stats-charts p {
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 #chart-1 {
@@ -327,7 +327,7 @@ h2 {
 }
 
 #stat-1 {
-    height: 430px;
+    padding-bottom: 5%;
 }
 
 #stat-1-content {
@@ -349,7 +349,7 @@ h2 {
 }
 
 #stat-2 {
-    height: 430px;
+    padding-bottom: 5%;
 }
 
 #stat-2-content {
@@ -371,7 +371,7 @@ h2 {
 }
 
 #stat-3 {
-    height: 500px;
+    padding-bottom: 5%;
 }
 
 #stat-3-content {
@@ -393,7 +393,7 @@ h2 {
 }
 
 #stat-4 {
-    height: 430px;
+    padding-bottom: 3%;
 }
 
 #stat-4-content {
@@ -452,28 +452,28 @@ h2 {
 
 #soil {
     background-color: #FF8A65;
-    height: 430px;
+    overflow: auto;
 }
 
 #soil-text {
-    margin-left: 50%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 5%;
+    padding: 5%;
     color: #FFCCBC;
 }
 
 #soil p {
-    margin: 0 auto;
+    margin-left: 50%;
     text-indent: 20px;
     font-family: 'Rubik', sans-serif;
 }
 
 #soil-p {
-    position: absolute;
-    width: 45%;
-    margin-left: 2%;
-    margin-top: 2%;
+    float: left;
+    width: 50%;
+}
+
+#soil-p img {
+    width: 90%;
+    margin: 5%;
 }
 
 #soil-content h3 {
@@ -488,29 +488,28 @@ h2 {
 
 #water {
     background-color: #64B5F6;
-    height: 430px;
+    overflow: auto;
 }
 
 #water-text {
-    margin-right: 50%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 5%;
+    padding: 5%;
     color: #B3E5FC;
 }
 
 #water p {
-    margin: 0 auto;
+    margin-right: 50%;
     text-indent: 20px;
     font-family: 'Rubik', sans-serif;
 }
 
 #water-p {
-    position: absolute;
-    margin-left: 53%;
-    width: 45%;
-    margin-right: 5%;
-    margin-top: 2%;
+    float: right;
+    width: 50%;
+}
+
+#water-p img {
+    width: 90%;
+    margin: 5%;
 }
 
 #water-content h3 {
@@ -525,28 +524,28 @@ h2 {
 
 #air {
     background-color: #CD6B97;
-    height: 430px;
+    overflow: auto;
 }
 
 #air-text {
-    margin-left: 50%;
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 5%;
     color: #B3E5FC;
 }
 
 #air p {
-    margin: 0 auto;
+    margin-left: 50%;
     text-indent: 20px;
     font-family: 'Rubik', sans-serif;
 }
 
 #air-p {
-    position: absolute;
-    width: 45%;
-    margin-left: 2%;
-    margin-top: 2%;
+    float: left;
+    width: 50%;
+}
+
+#air-p img {
+    width: 90%;
+    margin: 5%;
 }
 
 #air-content h3 {
@@ -561,29 +560,28 @@ h2 {
 
 #noise {
     background-color: #557780;
-    height: 430px;
+    overflow: auto;
 }
 
 #noise-text {
-    margin-right: 50%;
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 5%;
     color: #CFD8DC;
 }
 
 #noise p {
-    margin: 0 auto;
+    width: 50%;
     text-indent: 20px;
     font-family: 'Rubik', sans-serif;
 }
 
 #noise-p {
-    position: absolute;
-    margin-left: 53%;
-    width: 45%;
-    margin-right: 5%;
-    margin-top: 2%;
+    float: right;
+    width: 50%;
+}
+
+#noise-p img {
+    width: 90%;
+    margin: 5%;
 }
 
 #noise-content h3 {
@@ -598,28 +596,28 @@ h2 {
 
 #thermal {
     background-color: #BA68C8;
-    height: 430px;
+    overflow: auto;
 }
 
 #thermal-text {
-    margin-left: 50%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 5%;
+    padding: 5%;
     color: #EFDBF2;
 }
 
 #thermal p {
-    margin: 0 auto;
+    margin-left: 50%;
     text-indent: 20px;
     font-family: 'Rubik', sans-serif;
 }
 
 #thermal-p {
-    position: absolute;
-    width: 45%;
-    margin-left: 2%;
-    margin-top: 2%;
+    float: left;
+    width: 50%;
+}
+
+#thermal-p img {
+    width: 90%;
+    margin: 5%;
 }
 
 #thermal-content h3 {
@@ -633,29 +631,28 @@ h2 {
 
 #light {
     background-color: #5D4037;
-    height: 430px;
+    overflow: auto;
 }
 
 #light-text {
-    margin-right: 50%;
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 5%;
     color: white;
 }
 
 #light p {
-    margin: 0 auto;
+    margin-right: 50%;
     text-indent: 20px;
     font-family: 'Rubik', sans-serif;
 }
 
 #light-p {
-    position: absolute;
-    margin-left: 53%;
-    width: 45%;
-    margin-right: 5%;
-    margin-top: 2%;
+    float: right;
+    width: 50%;
+}
+
+#light-p img {
+    width: 90%;
+    margin: 5%;
 }
 
 #light-content h3 {
