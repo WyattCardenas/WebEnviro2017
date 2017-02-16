@@ -1,0 +1,129 @@
+body{
+	height: 100%;
+	margin: 0;
+}
+
+/* NAV */
+nav{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	z-index: 50;
+
+	/* COLOR NOT FINAL */
+	background-color: #ACE6B0;
+	border-bottom: #BDF7C1;
+	opacity: 0.9;
+}
+
+nav ul{
+	list-style-type: none;
+	display: inline-block;
+}
+
+nav li{
+	float: left;
+	padding: 10px 15px;
+}
+
+nav a{
+	text-decoration: none;
+	opacity: 1;
+	color: #000;
+}
+
+nav a:hover{
+	/* ADD MORE */
+}
+
+/* HEADING/BANNER */
+#heading{
+	height: 100%;
+	/* TEMPORARY */
+	background-color: lightgreen;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+#heading-intro{
+	padding: 25% 0;
+	text-align: center;
+	transition: .5s ease-in-out;
+	transition-delay: .5s;
+}
+
+#heading-intro h1{
+	position: absolute;
+	left: 10%;
+	top: 15%;
+	opacity: 0;
+	transition: .5s ease-in-out;
+	transition-delay: 1.5s;
+}
+
+.left-header{
+	float: left;
+	min-height: 100%;
+}
+
+.left-header h1{
+	position: absolute;
+	left: 35%;
+	top: 20%;
+	opacity: 0;
+	transition: .5s ease-in-out;
+	transition-delay: 2.5s;
+}
+
+#left-tree{
+	position: absolute;
+	bottom: 0;
+	left: 30%;
+	opacity: 0;
+	transition: .5s ease-in-out;
+	transition-delay: .5s;
+}
+
+#left-tree img{
+	width: 600px;
+}
+
+.right-header{
+	float: right;
+}
+
+.right-header h1{
+	position: absolute;
+	right: 15%;
+	top: 25%;
+	opacity: 0;
+	transition: .5s ease-in-out;
+	transition-delay: 3.5s;
+}
+
+#right-tree{
+	position: absolute;
+	bottom: 0;
+	left: 30%;
+	opacity: 1;
+	transition: .3s ease-in-out;
+	transition-delay: .5s;
+}
+
+#right-tree img{
+	width: 600px;
+}
+
+#heading:hover #left-tree, #heading:hover h1{
+	opacity: 1;
+}
+
+#heading:hover #right-tree{
+	opacity: 0;
+}
+
