@@ -1,6 +1,12 @@
+@font-face{
+	font-family: Rubik-Light;
+	src: url(fonts/rubik/Rubik-Light.ttf);
+}
+
 body{
 	height: 100%;
 	margin: 0;
+	font-family: Rubik-Light;
 }
 
 /* NAV */
@@ -136,18 +142,21 @@ nav a:hover{
 	opacity: 1;
 	transition: .5s ease-in-out;
 	transition-delay: 2s;
+	z-index: 49;
 }
 
 #heading:hover .left-header h1{
 	opacity: 1;
 	transition: .5s ease-in-out;
 	transition-delay: 3s;
+	z-index: 49;
 }
 
 #heading:hover .right-header h1{
 	opacity: 1;
 	transition: .5s ease-in-out;
 	transition-delay: 4s;
+	z-index: 49;
 }
 
 
@@ -155,6 +164,10 @@ nav a:hover{
 #about{
 	width: 100%;
 	background-color: #93EC87;
+}
+
+#about h2{
+	text-align: center;
 }
 
 #about-info{
@@ -173,6 +186,17 @@ nav a:hover{
 	width: 150px;
 }
 
+.members p{
+	font-size: 15px;
+}
+
+#purpose{
+	width: 60%;
+	margin: 0 auto;
+	text-align: justify;
+	text-align-last: center;
+}
+
 /* REPUBLIC ACTS */
 
 #republic-act-strip{
@@ -184,6 +208,10 @@ nav a:hover{
 	padding-top: 15px;
 	padding-bottom: 25px;
 	text-align: center;
+}
+
+#republic-act-strip-content h2{
+	text-transform: uppercase;
 }
 
 .button-content a{
@@ -215,9 +243,42 @@ nav a:hover{
 #rightHalf{
 	width: 50%;
 	text-align: justify;
-	text-align-last: right;
 	padding: 15px 0;
 }
+
+#happening-now-tag{
+	text-transform: uppercase;
+	font-size: 40px;
+	text-align: center;
+}
+
+#happening-now-tag:hover{
+	transform: scale(1);
+	transition: .3s ease-in-out;
+}
+
+#morefun{
+	font-size: 18px;
+	color: #1F1CAE;
+	display: block;
+}
+#phil{
+	font-size: 50px;
+}
+
+#tag-1 {
+    color: #2b80b9;
+}
+
+#tag-2 {
+    color: #E74B3C;
+}
+
+#tag-3 {
+    color: #F2C311;
+}
+
+
 
 /* TRASH */
 #trash{
@@ -226,46 +287,206 @@ nav a:hover{
 	padding: 15px 0;
 }
 
+#left-head{
+	width: 100%;
+	height: 300px;
+	background-image: url(img/DONOTREAD_RESIZED.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 300px 300px;
+}
+
+#left-head h2{
+	display: none;
+}
+
+#left-head h2:after{
+	display: block;
+	content: url(img/DONOTREAD_RESIZED.png);
+}
+
+#left-head h2:focus ~ #trash-text{
+	display: block;
+}
+
+.highlight_red{
+	color: #D71919;
+}
+
 #trash-text{
-	width: 80%;
+	width: 70%;
 	margin: 0 auto;
+	padding-top: 30px;
+}
+
+.highlight{
+	color: #EF941D;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+#ranking{
+	text-align: center;
+	font-size: 24px;
+	display: block;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 #trash-1{
 	width: 300px;
-	height: 200px;
+	height: 230px;
 	float: right;
+	padding: 0 5px;
 }
 
 #trash-2{
 	width: 300px;
 	float: left;
+	padding: 0 5px;
+	border-radius: 5px;
 }
 
-#left-head{
-	height: 100px;
-	width: 300px;
-	margin: 0 auto;
-	background: #4EF856;
+#sign-1, #sign-2, #sign-3{
+	display:block; 
+	text-transform: uppercase;
+	padding: 10px 0;
+	font-size: 24px;
 }
 
-#left-head:after{
-	content: " ";
-	border-top: 11px solid #4EF856;
-	border-left: 8px solid transparent;
-	border-right: 8px solid transparent;
-	position: relative;
-	top: 33px;
-	right: -140px;
+#sign-1{
+	color: #FB2828;
 }
 
-#left-head h2{
+#sign-2{
+	color: #F7BE10;
+}
+
+#sign-3{
+	padding-left: 430px;
+	color: #00FF18;
+}
+
+#trash-text p:nth-child(3){
 	text-align: center;
-	padding-top: 30px;
 }
 
+#trash-text p:nth-child(7){
+	font-size: 25px;
+}
 
+#trash-text p:nth-child(8){
+	text-align: center;
+}
 
-.highlight_red{
-	color: #D71919;
+/* TRIVIAS */
+.trivia{
+	background-color: #66B468;
+	padding: 15px 0;
+	text-align: center;
+}
+
+.trivia h3{
+	text-transform: uppercase;
+}
+
+.trivia-content{
+	width: 80%;
+	margin: 0 auto;
+}
+
+#trivia-1{
+	width: 300px;
+}
+
+/* ENV CODE */
+#environmental-code-strip{
+	width: 100%;
+	background-color: #B2F3BB;
+}
+
+#environmental-code-content{
+	padding-top: 15px;
+	padding-bottom: 25px;
+	text-align: center;
+}
+
+#environmental-code-content h2{
+	text-transform: uppercase;
+}
+
+/* STATS */
+#stats{
+	width: 100%;
+	background-color: #D2FFDA;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.stat-header{
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#stats-content{
+	width: 80%;
+	margin: 0 auto;
+}
+
+#stats-content img{
+	vertical-align: middle;
+	flat: left;
+	width: 500px;
+}
+
+/* TYPES OF POLLUTION */
+#pollution{
+	width: 100%;
+	background-color: #DCF8DD;
+	padding: 10px 0;
+	text-align: center;
+}
+
+#pollution-title{
+	text-align: center;
+}
+
+#pollution img{
+	width: 600px;
+}
+
+#soil-content, #water-content, #air-content, #noise-content, #thermal-content, #light-content{
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* GUIDE */
+#guide-contents{
+	width: 100%;
+	background-color: #D0FFC8;
+	padding: 10px 0;
+}
+
+#guide-title{
+	text-align: center;
+}
+
+#guide-icon{
+	vertical-align: middle;
+	width: 50px;
+}
+
+/* FOOTER */
+footer{
+	width: 100%;
+	background-color: ##CBFDD4;
+}
+
+footer ul{
+	list-style: none;
+}
+
+#ownership{
+	text-align: center;
+	text-transform: uppercase;
 }
