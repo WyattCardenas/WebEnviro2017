@@ -21,7 +21,8 @@ nav{
 	/* COLOR NOT FINAL */
 	background-color: transparent;
 	border-bottom: #BDF7C1;
-	opacity: 0.9;
+	opacity: 0.3;
+	transition: .3s ease;
 }
 
 nav ul{
@@ -40,8 +41,10 @@ nav a{
 	color: #000;
 }
 
-nav a:hover{
-	/* ADD SOMETHING */
+nav:hover{
+	background-color: #ECFFBD;
+	opacity: 1;
+	transition: .3s ease;
 }
 
 /* HEADING/BANNER */
@@ -53,14 +56,12 @@ nav a:hover{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	
+	position: relative;
 }
 
 #heading-intro{
 	padding: 350px 0;
 	text-align: center;
-	transition: .5s ease-in-out;
-	transition-delay: .5s;
 }
 
 #heading-intro h1{
@@ -68,7 +69,7 @@ nav a:hover{
 	left: 10%;
 	top: 15%;
 	opacity: 0;
-	transition: .5s ease-in-out;
+	transition: .2s ease-in-out;
 	transition-delay: 1s;
 }
 
@@ -79,10 +80,10 @@ nav a:hover{
 
 .left-header h1{
 	position: absolute;
-	left: 35%;
+	left: 37%;
 	top: 20%;
 	opacity: 0;
-	transition: .5s ease-in-out;
+	transition: .2s ease-in-out;
 	transition-delay: 1s;
 }
 
@@ -92,33 +93,30 @@ nav a:hover{
 	left: 30%;
 	opacity: 0;
 	transition: .5s ease-in-out;
-	transition-delay: 1s;
+	transition-delay: 1.8s;
 }
 
 #left-tree img{
 	width: 600px;
 }
 
-.right-header{
-	float: right;
-}
 
 .right-header h1{
 	position: absolute;
 	right: 15%;
-	bottom: 0;
+	top: 25%;
 	opacity: 0;
-	transition: .5s ease-in-out;
+	transition: .2s ease-in-out;
 	transition-delay: 1s;
 }
 
 #right-tree{
 	position: absolute;
-	top: 44%;
+	bottom: 0;
 	left: 30%;
 	opacity: 1;
-	transition: .3s ease-in-out;
-	transition-delay: 1s;
+	transition: .2s ease-in-out;
+	transition-delay: 1.8s;
 }
 
 #right-tree img{
@@ -129,33 +127,33 @@ nav a:hover{
 #heading:hover #left-tree{
 	opacity: 1;
 	transition: .5s ease-in-out;
-	transition-delay: 1s;
+	transition-delay: .6s;
 }
 
 #heading:hover #right-tree{
 	opacity: 0;
-	transition: .3s ease-in-out;
-	transition-delay: 1s;
+	transition: .5s ease-in-out;
+	transition-delay: .6s;
 }
 
 #heading:hover #heading-intro h1{
 	opacity: 1;
-	transition: .5s ease-in-out;
-	transition-delay: 2s;
+	transition: .3s ease-in-out;
+	transition-delay: 1.6s;
 	z-index: 49;
 }
 
 #heading:hover .left-header h1{
 	opacity: 1;
-	transition: .5s ease-in-out;
-	transition-delay: 3s;
+	transition: .3s ease-in-out;
+	transition-delay: 2.6s;
 	z-index: 49;
 }
 
 #heading:hover .right-header h1{
 	opacity: 1;
-	transition: .5s ease-in-out;
-	transition-delay: 4s;
+	transition: .3s ease-in-out;
+	transition-delay: 3.6s;
 	z-index: 49;
 }
 
@@ -191,7 +189,6 @@ nav a:hover{
 }
 
 #purpose{
-	width: 60%;
 	margin: 0 auto;
 	text-align: justify;
 	text-align-last: center;
@@ -201,7 +198,7 @@ nav a:hover{
 
 #republic-act-strip{
 	width: 100%;
-	background-color: #9AF68D;
+	background-color: #AEF4A4;
 }
 
 #republic-act-strip-content{
@@ -222,7 +219,7 @@ nav a:hover{
 /* FORGOTTEN BEAUTY */
 #happening-now{
 	width: 100%;
-	background-color: #C4FFBC;
+	background-color: #BBF7B3;
 }
 
 #happening-now-content{
@@ -234,6 +231,13 @@ nav a:hover{
 	width: 40%;
 	text-align: center;
 	padding-top: 20%;
+	background-image: url(img/Stickman.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#lefthalf h2{
+	display: none;
 }
 
 #beauty{
@@ -283,7 +287,7 @@ nav a:hover{
 /* TRASH */
 #trash{
 	width: 100%;
-	background-color: #E1FFE1;
+	background-color: #D3FFCD;
 	padding: 15px 0;
 }
 
@@ -378,7 +382,7 @@ nav a:hover{
 
 /* TRIVIAS */
 .trivia{
-	background-color: #66B468;
+	background-color: #D4FECF;
 	padding: 15px 0;
 	text-align: center;
 }
@@ -417,7 +421,7 @@ nav a:hover{
 	width: 100%;
 	background-color: #D2FFDA;
 	padding: 10px 0;
-	text-align: center;
+	height: 1200px
 }
 
 .stat-header{
@@ -428,34 +432,77 @@ nav a:hover{
 #stats-content{
 	width: 80%;
 	margin: 0 auto;
+	position: relative;
+	text-align: center;
 }
 
 #stats-content img{
-	vertical-align: middle;
-	flat: left;
 	width: 500px;
+}
+
+#stats-content h2{
+	font-size: 18px;
+	text-align: left;
+}
+
+#stat-1, #stat-2, #stat-3, #stat-4{
+	position: absolute;
+	width:40%;
+}
+
+#stat-1{
+	left: 0;
+}
+
+#stat-2{
+	right: 0;
+}
+
+#stat-3{
+	top: 500px;
+	left: 0;
+}
+
+#stat-4{
+	top: 500px;
+	right: 0;
 }
 
 /* TYPES OF POLLUTION */
 #pollution{
 	width: 100%;
 	background-color: #DCF8DD;
-	padding: 10px 0;
-	text-align: center;
+	padding-top: 90px;
+	padding-bottom: 10px;
+	text-align: justify;
 	column-count: 3;
+	position: relative;
 }
 
 #pollution-title{
-	text-align: center;
+	position: absolute;
+	top: 25px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 370px;
 }
 
 #pollution img{
-	width: 600px;
+	width: 100%;
+}
+
+#pollution h2, #pollution h3{
+	text-align: center;
 }
 
 #soil-content, #water-content, #air-content, #noise-content, #thermal-content, #light-content{
-	width: 80%;
+	padding: 0 3px;
 	margin: 0 auto;
+}
+
+#soil-content, #water-content, #air-content, #noise-content, #thermal-content, #light-content p{
+	text-align-last: center; 
 }
 
 /* GUIDE */
