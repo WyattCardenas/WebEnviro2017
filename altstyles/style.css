@@ -106,7 +106,7 @@ nav a:hover{
 .right-header h1{
 	position: absolute;
 	right: 15%;
-	top: 25%;
+	bottom: 0;
 	opacity: 0;
 	transition: .5s ease-in-out;
 	transition-delay: 1s;
@@ -114,7 +114,7 @@ nav a:hover{
 
 #right-tree{
 	position: absolute;
-	bottom: 0;
+	top: 44%;
 	left: 30%;
 	opacity: 1;
 	transition: .3s ease-in-out;
@@ -201,7 +201,7 @@ nav a:hover{
 
 #republic-act-strip{
 	width: 100%;
-	background-color: #B2F3BB;
+	background-color: #9AF68D;
 }
 
 #republic-act-strip-content{
@@ -222,7 +222,7 @@ nav a:hover{
 /* FORGOTTEN BEAUTY */
 #happening-now{
 	width: 100%;
-	background-color: #C4FECE;
+	background-color: #C4FFBC;
 }
 
 #happening-now-content{
@@ -294,19 +294,16 @@ nav a:hover{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 300px 300px;
+	transform: rotate(-40deg);
 }
 
 #left-head h2{
 	display: none;
 }
 
-#left-head h2:after{
+#left-head .highlight_red:after{
 	display: block;
 	content: url(img/DONOTREAD_RESIZED.png);
-}
-
-#left-head h2:focus ~ #trash-text{
-	display: block;
 }
 
 .highlight_red{
@@ -445,6 +442,7 @@ nav a:hover{
 	background-color: #DCF8DD;
 	padding: 10px 0;
 	text-align: center;
+	column-count: 3;
 }
 
 #pollution-title{
