@@ -3,7 +3,7 @@
 	src: url(fonts/rubik/Rubik-Light.ttf);
 }
 
-body{
+html, body{
 	height: 100%;
 	margin: 0;
 	font-family: Rubik-Light;
@@ -90,16 +90,14 @@ nav:hover{
 #left-tree{
 	position: absolute;
 	bottom: 0;
-	left: 30%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 800px;
 	opacity: 0;
 	transition: .5s ease-in-out;
 	transition-delay: 1.8s;
 }
-
-#left-tree img{
-	width: 600px;
-}
-
 
 .right-header h1{
 	position: absolute;
@@ -113,15 +111,15 @@ nav:hover{
 #right-tree{
 	position: absolute;
 	bottom: 0;
-	left: 30%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 800px;
 	opacity: 1;
 	transition: .2s ease-in-out;
 	transition-delay: 1.8s;
 }
 
-#right-tree img{
-	width: 600px;
-}
 
 /* MAGIC */
 #heading:hover #left-tree{
@@ -231,9 +229,10 @@ nav:hover{
 	width: 40%;
 	text-align: center;
 	padding-top: 20%;
-	background-image: url(img/Stickman.png);
+	background-image: url(img/forgo10Beauty.png);
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: contain;
 }
 
 #lefthalf h2{
@@ -247,7 +246,11 @@ nav:hover{
 #rightHalf{
 	width: 50%;
 	text-align: justify;
-	padding: 15px 0;
+	padding: 30px 0;
+}
+
+#rightHalf p{
+	padding: 0 150px;
 }
 
 #happening-now-tag{
@@ -305,17 +308,12 @@ nav:hover{
 	display: none;
 }
 
-#left-head .highlight_red:after{
-	display: block;
-	content: url(img/DONOTREAD_RESIZED.png);
-}
-
 .highlight_red{
 	color: #D71919;
 }
 
 #trash-text{
-	width: 70%;
+	width: 1200px;
 	margin: 0 auto;
 	padding-top: 30px;
 }
@@ -427,6 +425,7 @@ nav:hover{
 .stat-header{
 	text-transform: uppercase;
 	text-align: center;
+	font-size: 40px;
 }
 
 #stats-content{
@@ -474,8 +473,7 @@ nav:hover{
 	background-color: #DCF8DD;
 	padding-top: 90px;
 	padding-bottom: 10px;
-	text-align: justify;
-	column-count: 3;
+	column-count: 2;
 	position: relative;
 }
 
@@ -485,35 +483,122 @@ nav:hover{
 	left: 0;
 	right: 0;
 	margin: 0 auto;
-	width: 370px;
-}
-
-#pollution img{
-	width: 100%;
-}
-
-#pollution h2, #pollution h3{
+	width: 700px;
+	font-size: 40px;
 	text-align: center;
 }
 
-#soil-content, #water-content, #air-content, #noise-content, #thermal-content, #light-content{
-	padding: 0 3px;
+#pollution img{
+	width: 80%;
+	display: block;
 	margin: 0 auto;
 }
 
-#soil-content, #water-content, #air-content, #noise-content, #thermal-content, #light-content p{
-	text-align-last: center; 
+#soil-p{
+	border-radius: 50px;
+}
+
+#soil-content, #water-content, #air-content, #noise-content, #thermal-content, #light-content{
+	padding: 20px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#soil-head, #water-head, #air-head, #noise-head, #thermal-head, #light-head  {
+	position: absolute;
+	top: 30px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 100px;
+	z-index: 45;
+	background-color: #F8F8F8;
+	text-align: center;
+	opacity: 0;
+	transition: .3s ease;
+	border-radius: 15px;
+}
+
+#soil-text p, #water-text p, #air-text p, #noise-text p, #thermal-text p, #light-text p{
+	position: absolute;
+	z-index: 45;
+	text-align: center;
+	background-color: #F8F8F8;
+	opacity: 0;
+	transition: .3s ease;
+	width: 70%;
+	left: 15%;
+	padding: 14px 0;
+	border-radius: 15px;
+}
+
+#soil-text p{
+	top: 110px;
+}
+
+#water-text p{
+	top: 110px;
+}
+
+#air-text p{
+	top: 120px;
+}
+
+#noise-text p{
+	top: 80px;
+}
+
+#thermal-text p{
+	top: 90px;
+}
+
+#light-text p{
+	top: 120px;
+}
+
+#soil-content:hover #soil-head, #soil-content:hover p{
+	opacity: 0.9;
+	transition: .3s ease;
+}
+
+#water-content:hover #water-head, #water-content:hover p{
+	opacity: 0.9;
+	transition: .3s ease;
+}
+
+#air-content:hover #air-head, #air-content:hover p{
+	opacity: 0.9;
+	transition: .3s ease;
+}
+
+#noise-content:hover #noise-head, #noise-content:hover p{
+	opacity: 0.9;
+	transition: .3s ease;
+}
+
+#thermal-content:hover #thermal-head, #thermal-content:hover p{
+	opacity: 0.9;
+	transition: .3s ease;
+}
+
+#light-content:hover #light-head, #light-content:hover p{
+	opacity: 0.9;
+	transition: .3s ease;
 }
 
 /* GUIDE */
 #guide-contents{
+	position: relative;
 	width: 100%;
 	background-color: #D0FFC8;
-	padding: 10px 0;
+	padding-top: 10px;
+	padding-bottom: 40px
 }
 
 #guide-title{
 	text-align: center;
+	text-transform: uppercase;
+	font-size: 40px;
 }
 
 #guide-icon{
@@ -521,10 +606,29 @@ nav:hover{
 	width: 50px;
 }
 
+#guide-intro{
+	width: 1500px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.guide-header{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 30px;
+}
+
+.guide-info{
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
 /* FOOTER */
 footer{
 	width: 100%;
-	background-color: ##CBFDD4;
+	background-color: #91FF93;
 }
 
 footer ul{
@@ -534,4 +638,5 @@ footer ul{
 #ownership{
 	text-align: center;
 	text-transform: uppercase;
+	background-color: #85FF87;
 }
