@@ -23,7 +23,7 @@ nav {
     /* COLOR NOT FINAL */
     background-color: transparent;
     border-bottom: #BDF7C1;
-    opacity: 0.3;
+    opacity: 0.2;
     transition: .3s ease;
 }
 
@@ -55,37 +55,32 @@ nav:hover {
 #heading {
     /* TEMPORARY */
     min-height: 100%;
-    background-image: url('img/background.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(img/hoverEffect.png), url('img/background.jpg');
+    background-attachment: scroll,fixed;
+    background-position: left top, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size:  200px 100px, cover;
     position: relative;
 }
 
-#heading-intro {
-    padding: 350px 0;
-    text-align: center;
-}
 
 #heading-intro h1 {
     position: absolute;
     left: 10%;
-    top: 15%;
+    top: 10%;
     opacity: 0;
     transition: .2s ease-in-out;
     transition-delay: 1s;
 }
 
-.left-header {
-    float: left;
-    min-height: 100%;
-}
-
 .left-header h1 {
     position: absolute;
-    left: 37%;
+    left: 0;
+    right: 0;
     top: 20%;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
     opacity: 0;
     transition: .2s ease-in-out;
     transition-delay: 1s;
@@ -165,7 +160,7 @@ nav:hover {
 
 #about {
     width: 100%;
-    background-color: #93EC87;
+    background-color: #FFF5C9;
 }
 
 #about h2 {
@@ -186,6 +181,12 @@ nav:hover {
 
 .members img {
     width: 150px;
+    transition: .3s ease;
+}
+
+.members img:hover {
+    transform: scale(1.1);
+    transition: .3s ease;
 }
 
 .members p {
@@ -216,9 +217,18 @@ nav:hover {
     text-transform: uppercase;
 }
 
-.button-content a {
-    padding: 0 15px;
+.button{
+    color: black;
+    padding: 10px 20px;
     text-decoration: none;
+    border-width: 2px;
+    border-style: dashed;
+    transition: .2s ease;
+}
+
+.button:hover{
+    border-style: solid;
+    transition: .2s ease;
 }
 
 
@@ -226,7 +236,7 @@ nav:hover {
 
 #happening-now {
     width: 100%;
-    background-color: #BBF7B3;
+    background-color: #FFF5C9;
 }
 
 #happening-now-content {
@@ -259,7 +269,7 @@ nav:hover {
 }
 
 #rightHalf p {
-    padding: 0 150px;
+    padding: 0 15px;
 }
 
 #happening-now-tag {
@@ -300,7 +310,7 @@ nav:hover {
 
 #trash {
     width: 100%;
-    background-color: #D3FFCD;
+    background-color: #FFF5C9;
     padding: 15px 0;
 }
 
@@ -369,6 +379,7 @@ nav:hover {
 
 #sign-2 {
     color: #F7BE10;
+    padding-left: 300px;
 }
 
 #sign-3 {
@@ -382,6 +393,7 @@ nav:hover {
 
 #trash-text p:nth-child(7) {
     font-size: 25px;
+    text-align: center;
 }
 
 #trash-text p:nth-child(8) {
@@ -392,7 +404,7 @@ nav:hover {
 /* TRIVIAS */
 
 .trivia {
-    background-color: #D4FECF;
+    background-color: #AEF4A4;
     padding: 15px 0;
     text-align: center;
 }
@@ -415,7 +427,7 @@ nav:hover {
 
 #environmental-code-strip {
     width: 100%;
-    background-color: #B2F3BB;
+    background-color: #AEF4A4;
 }
 
 #environmental-code-content {
@@ -433,26 +445,36 @@ nav:hover {
 
 #stats {
     width: 100%;
-    background-color: #D2FFDA;
+    background-color: #FFF5C9;
     padding: 10px 0;
-    height: 1200px
+    position: relative;
+    padding-top: 100px;
+    column-count: 2;
+    column-width: 800px;
 }
 
 .stat-header {
+    position: absolute;
     text-transform: uppercase;
     text-align: center;
     font-size: 40px;
+    width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 30px;
 }
 
 #stats-content {
     width: 80%;
     margin: 0 auto;
-    position: relative;
     text-align: center;
+    font-size: 15px
 }
 
 #stats-content img {
-    width: 500px;
+    width: 700px;
 }
 
 #stats-content h2 {
@@ -460,39 +482,16 @@ nav:hover {
     text-align: left;
 }
 
-#stat-1, #stat-2, #stat-3, #stat-4 {
-    position: absolute;
-    width: 40%;
-}
-
-#stat-1 {
-    left: 0;
-}
-
-#stat-2 {
-    right: 0;
-}
-
-#stat-3 {
-    top: 500px;
-    left: 0;
-}
-
-#stat-4 {
-    top: 500px;
-    right: 0;
-}
-
-
 /* TYPES OF POLLUTION */
 
 #pollution {
     width: 100%;
-    background-color: #DCF8DD;
+    background-color: #FFF5C9;
     padding-top: 90px;
     padding-bottom: 10px;
-    column-count: 2;
     position: relative;
+    column-count: 2;
+    column-width: 900px;
 }
 
 #pollution-title {
@@ -507,13 +506,13 @@ nav:hover {
 }
 
 #pollution img {
-    width: 80%;
+    width: 800px;
     display: block;
     margin: 0 auto;
 }
 
-#soil-p {
-    border-radius: 50px;
+#soil-p, #water-p, #air-p, #noise-p, #thermal-p, #light-p{
+    transition: .3s ease;
 }
 
 #soil-content, #water-content, #air-content, #noise-content, #thermal-content, #light-content {
@@ -524,7 +523,7 @@ nav:hover {
 
 #soil-head, #water-head, #air-head, #noise-head, #thermal-head, #light-head {
     position: absolute;
-    top: 30px;
+    top: 15%;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -537,41 +536,43 @@ nav:hover {
     border-radius: 15px;
 }
 
+
 #soil-text p, #water-text p, #air-text p, #noise-text p, #thermal-text p, #light-text p {
     position: absolute;
-    z-index: 45;
     text-align: center;
     background-color: #F8F8F8;
     opacity: 0;
     transition: .3s ease;
-    width: 70%;
-    left: 15%;
+    left: 0;
+    right:0;
     padding: 14px 0;
     border-radius: 15px;
+    width: 700px;
+    margin: 0 auto;
 }
 
 #soil-text p {
-    top: 110px;
+    top: 30%;
 }
 
 #water-text p {
-    top: 110px;
+    top: 35%;
 }
 
 #air-text p {
-    top: 120px;
+    top: 30%;
 }
 
 #noise-text p {
-    top: 80px;
+    top: 25%;
 }
 
 #thermal-text p {
-    top: 90px;
+    top: 30%;
 }
 
 #light-text p {
-    top: 120px;
+    top: 35%;
 }
 
 #soil-content:hover #soil-head, #soil-content:hover p {
@@ -604,13 +605,19 @@ nav:hover {
     transition: .3s ease;
 }
 
+#soil-content:hover #soil-p, #soil-content:hover #soil-p, #water-content:hover #water-p, #air-content:hover #air-p, #noise-content:hover #noise-p, #thermal-content:hover #thermal-p, #noise-content:hover #noise-p, #light-content:hover #light-p{
+    filter: blur(1px);
+    transition: .3s ease;
+}
+
+
 
 /* GUIDE */
 
 #guide-contents {
     position: relative;
     width: 100%;
-    background-color: #D0FFC8;
+    background-color: #FFF5C9;
     padding-top: 10px;
     padding-bottom: 40px
 }
@@ -650,6 +657,7 @@ nav:hover {
 footer {
     width: 100%;
     background-color: #91FF93;
+    padding: 10px;
 }
 
 footer ul {
@@ -659,102 +667,4 @@ footer ul {
 #ownership {
     text-align: center;
     text-transform: uppercase;
-    background-color: #85FF87;
-}
-
-transition: .3s ease;
-width: 70%;
-left: 15%;
-padding: 14px 0;
-border-radius: 15px;
-
-}
-#soil-text p {
-    top: 110px;
-}
-#water-text p {
-    top: 110px;
-}
-#air-text p {
-    top: 120px;
-}
-#noise-text p {
-    top: 80px;
-}
-#thermal-text p {
-    top: 90px;
-}
-#light-text p {
-    top: 120px;
-}
-#soil-content:hover #soil-head, #soil-content:hover p {
-    opacity: 0.9;
-    transition: .3s ease;
-}
-#water-content:hover #water-head, #water-content:hover p {
-    opacity: 0.9;
-    transition: .3s ease;
-}
-#air-content:hover #air-head, #air-content:hover p {
-    opacity: 0.9;
-    transition: .3s ease;
-}
-#noise-content:hover #noise-head, #noise-content:hover p {
-    opacity: 0.9;
-    transition: .3s ease;
-}
-#thermal-content:hover #thermal-head, #thermal-content:hover p {
-    opacity: 0.9;
-    transition: .3s ease;
-}
-#light-content:hover #light-head, #light-content:hover p {
-    opacity: 0.9;
-    transition: .3s ease;
-}
-
-/* GUIDE */
-#guide-contents {
-    position: relative;
-    width: 100%;
-    background-color: #D0FFC8;
-    padding-top: 10px;
-    padding-bottom: 40px
-}
-#guide-title {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 40px;
-}
-#guide-icon {
-    vertical-align: middle;
-    width: 50px;
-}
-#guide-intro {
-    width: 1500px;
-    margin: 0 auto;
-    text-align: center;
-}
-.guide-header {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 30px;
-}
-.guide-info {
-    width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-/* FOOTER */
-footer {
-    width: 100%;
-    background-color: #91FF93;
-}
-footer ul {
-    list-style: none;
-}
-#ownership {
-    text-align: center;
-    text-transform: uppercase;
-    background-color: #85FF87;
 }
