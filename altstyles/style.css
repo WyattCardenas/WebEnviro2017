@@ -52,7 +52,7 @@ nav:hover{
 #heading{
 	min-height: 100%;
 	/* TEMPORARY */
-	background-image: url('img/background.jpg');
+	background-image: url('img/mountain-trees.png');
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -98,6 +98,7 @@ nav:hover{
 	opacity: 0;
 	transition: .5s ease-in-out;
 	transition-delay: 1.8s;
+    visibility: hidden;
 }
 
 .right-header h1{
@@ -119,6 +120,7 @@ nav:hover{
 	opacity: 1;
 	transition: .2s ease-in-out;
 	transition-delay: 1.8s;
+    visibility: hidden;
 }
 
 
