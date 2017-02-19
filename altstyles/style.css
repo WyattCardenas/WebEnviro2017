@@ -50,18 +50,17 @@ nav:hover{
 
 /* HEADING/BANNER */
 #heading{
-	min-height: 100%;
 	/* TEMPORARY */
+    min-height: 100%;
 	background-image: url('img/mountain-trees.png');
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	position: relative;
 }
 
 #heading-intro{
-	padding: 350px 0;
+	
 	text-align: center;
 }
 
@@ -89,7 +88,7 @@ nav:hover{
 }
 
 #left-tree{
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -111,7 +110,7 @@ nav:hover{
 }
 
 #right-tree{
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	left: 0;
 	right: 0;
