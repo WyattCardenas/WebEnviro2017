@@ -161,7 +161,7 @@ nav:hover{
 /* WHO ARE WE? */
 #about{
 	width: 100%;
-	background-color: #DAFFD4;
+	background-color: #93EC87;
 }
 
 #about h2{
@@ -182,11 +182,6 @@ nav:hover{
 
 .members img{
 	width: 150px;
-	transition: .2s ease;
-}
-.members img:hover{
-	transform: scale(1.1);
-	transition: .2s ease;
 }
 
 .members p{
@@ -219,14 +214,12 @@ nav:hover{
 .button-content a{
 	padding: 0 15px;
 	text-decoration: none;
-	color: black;
-	font-size: 20px;
 }
 
 /* FORGOTTEN BEAUTY */
 #happening-now{
 	width: 100%;
-	background-color: #DAFFD4;
+	background-color: #BBF7B3;
 }
 
 #happening-now-content{
@@ -299,7 +292,7 @@ nav:hover{
 /* TRASH */
 #trash{
 	width: 100%;
-	background-color: #DAFFD4;
+	background-color: #D3FFCD;
 	padding: 15px 0;
 }
 
@@ -367,7 +360,6 @@ nav:hover{
 }
 
 #sign-2{
-	padding-left: 300px;
 	color: #F7BE10;
 }
 
@@ -390,7 +382,7 @@ nav:hover{
 
 /* TRIVIAS */
 .trivia{
-	background-color: #AEF4A4;
+	background-color: #D4FECF;
 	padding: 15px 0;
 	text-align: center;
 }
@@ -411,7 +403,7 @@ nav:hover{
 /* ENV CODE */
 #environmental-code-strip{
 	width: 100%;
-	background-color: #AEF4A4;
+	background-color: #B2F3BB;
 }
 
 #environmental-code-content{
@@ -427,7 +419,7 @@ nav:hover{
 /* STATS */
 #stats{
 	width: 100%;
-	background-color: #DAFFD4;
+	background-color: #D2FFDA;
 	padding: 10px 0;
 	height: 1200px
 }
@@ -480,7 +472,7 @@ nav:hover{
 /* TYPES OF POLLUTION */
 #pollution{
 	width: 100%;
-	background-color: #DAFFD4;
+	background-color: #DCF8DD;
 	padding-top: 90px;
 	padding-bottom: 10px;
 	column-count: 2;
@@ -516,7 +508,7 @@ nav:hover{
 
 #soil-head, #water-head, #air-head, #noise-head, #thermal-head, #light-head  {
 	position: absolute;
-	top: 50px;
+	top: 30px;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
@@ -540,9 +532,6 @@ nav:hover{
 	left: 15%;
 	padding: 14px 0;
 	border-radius: 15px;
-	font-size: 15px;
-	max-height: 200px;
-	overflow: auto;
 }
 
 #soil-text p{
@@ -603,7 +592,7 @@ nav:hover{
 #guide-contents{
 	position: relative;
 	width: 100%;
-	background-color: #DAFFD4;
+	background-color: #D0FFC8;
 	padding-top: 10px;
 	padding-bottom: 40px
 }
@@ -641,8 +630,7 @@ nav:hover{
 /* FOOTER */
 footer{
 	width: 100%;
-	background-color: #C9FFCA;
-	padding: 5px 15px;
+	background-color: #91FF93;
 }
 
 footer ul{
@@ -652,5 +640,4 @@ footer ul{
 #ownership{
 	text-align: center;
 	text-transform: uppercase;
-	padding-bottom:0px;
-}
+	background-color: #85FF87;
