@@ -161,7 +161,8 @@ nav:hover{
 /* WHO ARE WE? */
 #about{
 	width: 100%;
-	background-color: #93EC87;
+	/* background-color: #93EC87; */
+    background-color: #A1F660;
 }
 
 #about h2{
@@ -198,7 +199,7 @@ nav:hover{
 
 #republic-act-strip{
 	width: 100%;
-	background-color: #AEF4A4;
+    background-color: #A1E660;
 }
 
 #republic-act-strip-content{
@@ -219,7 +220,7 @@ nav:hover{
 /* FORGOTTEN BEAUTY */
 #happening-now{
 	width: 100%;
-	background-color: #BBF7B3;
+	background-color: #A1D660;
 }
 
 #happening-now-content{
@@ -287,7 +288,7 @@ nav:hover{
 /* TRASH */
 #trash{
 	width: 100%;
-	background-color: #D3FFCD;
+	background-color: #BFC773;
 	padding: 15px 0;
 }
 
@@ -382,7 +383,7 @@ nav:hover{
 
 /* TRIVIAS */
 .trivia{
-	background-color: #D4FECF;
+	background-color: #CEC773;
 	padding: 15px 0;
 	text-align: center;
 }
@@ -403,7 +404,7 @@ nav:hover{
 /* ENV CODE */
 #environmental-code-strip{
 	width: 100%;
-	background-color: #B2F3BB;
+	background-color: #DAC773;
 }
 
 #environmental-code-content{
@@ -419,7 +420,7 @@ nav:hover{
 /* STATS */
 #stats{
 	width: 100%;
-	background-color: #D2FFDA;
+	background-color: #DDD773;
 	padding: 10px 0;
 	height: 1200px
 }
@@ -471,7 +472,7 @@ nav:hover{
 /* TYPES OF POLLUTION */
 #pollution{
 	width: 100%;
-	background-color: #DCF8DD;
+	background-color: #F0E68C;
 	padding-top: 90px;
 	padding-bottom: 10px;
 	text-align: justify;
@@ -508,7 +509,7 @@ nav:hover{
 /* GUIDE */
 #guide-contents{
 	width: 100%;
-	background-color: #D0FFC8;
+	background-color: #d0a254;
 	padding: 10px 0;
 }
 
