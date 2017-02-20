@@ -59,7 +59,7 @@ nav:hover {
     background-attachment: scroll,fixed;
     background-position: left top, center;
     background-repeat: no-repeat, no-repeat;
-    background-size:  200px 100px, cover;
+    background-size:  150px 75px, cover;
     position: relative;
 }
 
@@ -500,9 +500,13 @@ nav:hover {
     left: 0;
     right: 0;
     margin: 0 auto;
-    width: 700px;
+    width: 800px;
     font-size: 40px;
     text-align: center;
+    background-image: url(img/hoverEffect.png);
+    background-size: 100px 50px;
+    background-position: top left;
+    background-repeat: no-repeat;
 }
 
 #pollution img {
@@ -634,9 +638,12 @@ nav:hover {
 }
 
 #guide-intro {
-    width: 1500px;
     margin: 0 auto;
     text-align: center;
+}
+
+#guide-intro-details{
+	margin: 0 5%;
 }
 
 .guide-header {
@@ -646,10 +653,56 @@ nav:hover {
 }
 
 .guide-info {
-    width: 1200px;
+    width: 1000px;
     margin: 0 auto;
+    padding: 0 5%;
     text-align: center;
 }
+
+#guide-1 .guide-info{
+	background-image: url(img/trashBin.png);
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+#guide-2 .guide-info{
+	background-image: url(img/recycle.png);
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+#guide-3 .guide-info{
+	background-image: url(img/tree.png);
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+#guide-4 .guide-info{
+	background-image: url(img/bike.png);
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+#guide-5 .guide-info{
+	background-image: url(img/chatBubble.png);
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+#guide-6 .guide-info{
+	background-image: url(img/go.png);
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+
+
 
 
 /* FOOTER */
