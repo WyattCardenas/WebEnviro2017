@@ -71,6 +71,7 @@ nav:hover {
     opacity: 0;
     transition: .2s ease-in-out;
     transition-delay: 1s;
+    z-index: 49;
 }
 
 .left-header h1 {
@@ -84,6 +85,7 @@ nav:hover {
     opacity: 0;
     transition: .2s ease-in-out;
     transition-delay: 1s;
+    z-index: 49;
 }
 
 #left-tree {
@@ -105,6 +107,7 @@ nav:hover {
     opacity: 0;
     transition: .2s ease-in-out;
     transition-delay: 1s;
+    z-index: 49;
 }
 
 #right-tree {
@@ -138,21 +141,21 @@ nav:hover {
     opacity: 1;
     transition: .3s ease-in-out;
     transition-delay: 1.6s;
-    z-index: 49;
+
 }
 
 #heading:hover .left-header h1 {
     opacity: 1;
     transition: .3s ease-in-out;
     transition-delay: 2.6s;
-    z-index: 49;
+
 }
 
 #heading:hover .right-header h1 {
     opacity: 1;
     transition: .3s ease-in-out;
     transition-delay: 3.6s;
-    z-index: 49;
+    
 }
 
 
@@ -458,12 +461,16 @@ nav:hover {
     text-transform: uppercase;
     text-align: center;
     font-size: 40px;
-    width: 1000px;
+    width: 800px;
     text-align: center;
     margin: 0 auto;
     left: 0;
     right: 0;
     top: 30px;
+    background-image: url(img/chart.png);
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
 }
 
 #stats-content {
